@@ -1,0 +1,1676 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="海洋CMS最新版发布" name="keywords">
+<meta content="海洋cms是为解决站长核心需求而设计的内容管理系统，一套程序自适应电脑、手机、平板、APP多个终端入口，无任何加密代码、安全有保障，是您最佳的建站工具" name="description">
+<meta content="webkit" name="renderer"/>
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="no-transform" http-equiv="Cache-Control">
+<meta content="no-siteapp" http-equiv="Cache-Control">
+<title>海洋CMS最新版发布 - 程序发布 - 站长论坛 - 海洋CMS - 开源免费PHP影视系统,影视CMS,视频CMS,电影CMS,SEACMS</title>
+<link href="view/img/favicon.ico" rel="shortcut icon"/>
+<link href="view/img/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="view/img/favicon.ico" rel="Bookmark">
+<link href="plugin/msdn_theme_blue/css/bootstrap.css" rel="stylesheet"/>
+<link href="plugin/msdn_theme_blue/css/bootstrap-bbs.css" rel="stylesheet"/>
+<link href="plugin/huux_notice/view/css/huux-notice.css" name="huux_notice" rel="stylesheet"/>
+<style>
+.bottom-nav {
+    /* display: none; */
+    background-color: white;
+}
+
+.nav_font{
+	font-size:12px;
+	color:#8590a6;
+	margin-top:2px;
+}
+
+
+.bottom-nav .opts-group {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 6px; */
+    line-height: 20px;
+    color: #9e9e9e;
+    cursor: pointer;
+}
+.bottom-nav .opts-group.active {
+    color: #da5b62;
+}
+@media screen and (min-width: 992px) {
+    .bottom-nav, .header_seach_but {
+        display: none !important;
+    }
+</style><style>
+.haya-post-info-username.today .username {
+	color: var(--danger) !important;
+}
+.haya-post-info-username.today .date {
+	color: var(--danger) !important;
+}
+</style>
+<style data-model="huux_hlight" type="text/css">.huux_thread_hlight_style1{color: #D9534D;font-weight:normal}.huux_thread_hlight_style2{color: #F0AD4E;font-weight:normal}.huux_thread_hlight_style3{color: #5BC0DE;font-weight:normal}.huux_thread_hlight_style4{color: #5CB85C;font-weight:normal}.huux_thread_hlight_style5{color: #337AB7;font-weight:normal}</style><style>
+.letone #sidebar.mibbs_con{background-color:#08599E;height:52px;position:relative;}
+.mibbs_con .mibbs_signpanel{height:50px;display:block;position:relative;background-color:#08599E;background-image:url(./plugin/sg_sign_vip/img/tou.png);background-repeat:no-repeat;background-position:14px 8px;cursor:pointer;}
+.mibbs_con .mibbs_signpanel .font{position:absolute;color:#fff;width:48px;text-align:center;height:30px;font-size:16px;line-height:30px;top:11px;left:44px;}
+.mibbs_con .mibbs_signpanel .nums{display:none;}.mibbs_con .mibbs_signpanel .fblock{height:46px;width:130px;background-color:#fff;padding-left:5px;padding-right:5px;position:absolute;top:2px;right:2px;font-size:14px;color:#606060;}
+.mibbs_con .mibbs_signpanel .fblock .all{height:23px;line-height:26px;padding-left:30px;border-bottom:1px solid #eee;background-image:url(./plugin/sg_sign_vip/img/tou2.jpg);background-repeat:no-repeat;background-position:5px 0;margin-bottom:0;color:#606060;}
+.mibbs_con .mibbs_signpanel .fblock .line{height:22px;line-height:24px;padding-left:30px;width:130px;background-image:url(./plugin/sg_sign_vip/img/tou2.jpg);background-repeat:no-repeat;background-position:5px -25px;color:#606060;}
+.mibbs_con .visted .font{font-size:20px;line-height:25px;width:60px;left:46px;top:8px;text-shadow:0 1px 0 #ff4921;}
+</style><link href="plugin/xiuno_top__list_block/css/css.css" rel="stylesheet"/>
+<style type="text/css">
+.img_wap{
+ width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+  }
+
+  .img_wap img{
+    width: 100%;
+  height: 100%;
+  
+  position: absolute;  
+  }
+    .plugin_list {
+        display: inline-block;
+    	
+    	border-bottom: 0px;
+    	margin: 6px 3px;
+    	border-radius:2px;
+    }
+	.plugin_list:hover {
+	    box-shadow: 1px 1px 8px 3px #adb9c5;
+		display: inline-block;
+		border-radius:2px;
+	}
+
+@media (max-width: 991px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 32% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+
+    @media (max-width: 768px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 48% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+     @media (max-width: 510px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 100% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+	</style><style>
+/*
+.toggle_more {
+	max-height: 100px;
+}
+*/
+.update_log_list a.update_log_history, 
+.update_log_list a.update_log_delete {
+	display: none;
+}
+
+.update_log_list > li:hover {
+	background: var(--gray-300);
+}
+.update_log_list > li:hover > a.update_log_history, 
+.update_log_list > li:hover > a.update_log_delete {
+	display: inline-block;
+}
+
+</style>
+</link></meta></meta></meta></meta></head>
+<body>
+<div class="position-fixed w-100 header_fiexd bottom-nav" style="width: 100%; height: 55px; bottom: 0; z-index: 1000;border-top: 1px solid rgb(239, 239, 239);">
+<div class="row mx-0 text-center align-items-center" style="height: 55px;">
+<a class="col" href="bbs.htm" style="max-width: 20%;">
+<div>
+<img alt="最新" border="0" src="view/img/8wDlpd.png" width="25px"/>
+</div>
+<div class="nav_font">
+                最新
+            </div>
+</a>
+<a class="col" data-target="#forum" data-toggle="modal" style="max-width: 20%;">
+<div>
+<img alt="版块" border="0" src="view/img/8wDFp9.png" width="25px"/>
+</div>
+<div class="nav_font">
+                版块
+            </div>
+</a>
+<a class="col" href="thread-create-6.htm" style="max-width: 20%;">
+<div>
+<img alt="发主题" border="0" src="view/img/8wDEOx.png" width="40px"/>
+</div>
+</a>
+<a class="col" href="search.htm" style="max-width: 20%;">
+<div>
+<img alt="搜索" border="0" src="view/img/8wDMfH.png" width="25px"/>
+</div>
+<div class="nav_font">
+                搜索
+            </div>
+</a>
+<a class="col" href="my-notice.htm" style="max-width: 20%;">
+<div>
+<img alt="我的" border="0" src="view/img/8wDKte.png" width="25px"/>
+</div>
+<div class="nav_font">
+                我的
+            </div>
+</a>
+</div>
+</div>
+<div class="position-fixed header_fiexd text-center hidden-lg" style="width: 100%; height: 100px; bottom: 0; z-index: 999;"><a class="btn btn-primary" href="user-login.htm" role="button" style="box-shadow: 0 1px 3px rgba(26,26,26,.1);
+">登录 / 注册</a></div>
+<div aria-hidden="true" class="modal md-effect-1" id="forum" style="display: none;">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">分类导航</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<ul class="list-group list-group-flush">
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-1" fid="1">
+<a class="nav-link" href="forum-1.htm"><i class="icon-comments d-md-none"></i> 使用交流<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-2" fid="2">
+<a class="nav-link" href="forum-2.htm"><i class="icon-comments d-md-none"></i> 模板风格<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-3" fid="3">
+<a class="nav-link" href="forum-3.htm"><i class="icon-comments d-md-none"></i> 精选模板<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-4" fid="4">
+<a class="nav-link" href="forum-4.htm"><i class="icon-comments d-md-none"></i> 插件整合<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-5" fid="5">
+<a class="nav-link" href="forum-5.htm"><i class="icon-comments d-md-none"></i> 教程帮助<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-6" fid="6">
+<a class="nav-link" href="forum-6.htm"><i class="icon-comments d-md-none"></i> 程序发布<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-7" fid="7">
+<a class="nav-link" href="forum-7.htm"><i class="icon-comments d-md-none"></i> 站长茶馆<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-8" fid="8">
+<a class="nav-link" href="forum-8.htm"><i class="icon-comments d-md-none"></i> 搜索优化<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-9" fid="9">
+<a class="nav-link" href="forum-9.htm"><i class="icon-comments d-md-none"></i> 技术分享<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-10" fid="10">
+<a class="nav-link" href="forum-10.htm"><i class="icon-comments d-md-none"></i> 交易市场<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-11" fid="11">
+<a class="nav-link" href="forum-11.htm"><i class="icon-comments d-md-none"></i> 站务处理<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- 
+		二级导航：一般用作 CMS 、企业站、商城、等多频道需求的站点
+		Xiuno BBS 4.0 的 PC/Mobile 分离写法 
+		优点：结构清晰
+		缺点：有重复代码
+	-->
+<header id="header">
+<!-- PC Navigation start -->
+<div class="navbar navbar-dark bg-dark navbar-expand-lg hidden-sm hidden-md">
+<div class="container" id="pc_nav">
+<!-- PC: logo -->
+<a class="navbar-brand text-truncate" href="forum-6.htm" style="padding:0;margin-left: -3px;">
+<img src="plugin/xn_nav_2/view/img/logo_pc.png" style="height:28px;margin-right:9px;"/>
+</a>
+<style>
+				.active{background-color: #7194c0;}
+				.active a{ color:#FFF;}
+				.active a:hover{ color:#FFF;}
+				</style>
+<!-- PC: 左侧：主要导航菜单 -->
+<ul class="navbar-nav mr-auto" style="margin-top: 3px;">
+<li class="nav-item home"><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-item home"><a class="nav-link" href="bbs.htm">站长论坛</a></li>
+<li class="nav-item home"><a class="nav-link" href="doc.htm">技术文档</a></li>
+<li class="nav-item home"><a class="nav-link" href="forum-3.htm">精选模板</a></li>
+</ul>
+<!-- PC: 右侧：用户 -->
+<ul class="navbar-nav">
+<li class="nav-item hidden-lg"><a class="nav-link" href="#" id="sg_sign_mobile"><i class="icon-gift"></i> 签到</a></li><li class="nav-item hidden-lg">
+<a class="nav-link" href="search.htm"><i class="icon-search"></i> 搜索</a>
+</li>
+<li class="nav-item"><a class="nav-link" href="user-login.htm"><i class="icon-user"></i> 登录</a></li>
+</ul>
+</div>
+</div>
+<!-- pc 的版块列表 -->
+<!-- 版块放在第二级别显示 -->
+<div class="hidden-sm hidden-md" id="nav_pc_2">
+<div class="container">
+<ul class="nav" style="background-color:#d0dce7;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;">
+<li class="nav-item" data-active="fid-1" fid="1">
+<a class="nav-link" href="forum-1.htm">使用交流</a>
+</li>
+<li class="nav-item" data-active="fid-2" fid="2">
+<a class="nav-link" href="forum-2.htm">模板风格</a>
+</li>
+<li class="nav-item" data-active="fid-3" fid="3">
+<a class="nav-link" href="forum-3.htm">精选模板</a>
+</li>
+<li class="nav-item" data-active="fid-4" fid="4">
+<a class="nav-link" href="forum-4.htm">插件整合</a>
+</li>
+<li class="nav-item" data-active="fid-5" fid="5">
+<a class="nav-link" href="forum-5.htm">教程帮助</a>
+</li>
+<li class="nav-item" data-active="fid-6" fid="6">
+<a class="nav-link" href="forum-6.htm">程序发布</a>
+</li>
+<li class="nav-item" data-active="fid-7" fid="7">
+<a class="nav-link" href="forum-7.htm">站长茶馆</a>
+</li>
+<li class="nav-item" data-active="fid-8" fid="8">
+<a class="nav-link" href="forum-8.htm">搜索优化</a>
+</li>
+<li class="nav-item" data-active="fid-9" fid="9">
+<a class="nav-link" href="forum-9.htm">技术分享</a>
+</li>
+<li class="nav-item" data-active="fid-10" fid="10">
+<a class="nav-link" href="forum-10.htm">交易市场</a>
+</li>
+<li class="nav-item" data-active="fid-11" fid="11">
+<a class="nav-link" href="forum-11.htm">站务处理</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- PC Navigation end -->
+<!-- Mobile Navigation start -->
+<div class="navbar navbar-dark bg-dark navbar-expand-lg hidden-lg">
+<div class="container" id="mobile_nav">
+<!-- 左侧：菜单按钮 -->
+<button aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单" class="navbar-toggler" data-target="#mobile_nav_dropdown" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- 中间的 LOGO、网站标题 -->
+<a class="navbar-brand text-truncate" href="forum-6.htm" style="padding:0;">
+<img src="view/img/logo.png" style="height:35px;"/>
+<span>程序发布</span>
+</a>
+<!-- 右侧的用户登录、发帖图标 -->
+<a aria-label="首页" class="navbar-brand" href="index.html"> <i class="icon-home"></i></a>
+<!-- 左侧：菜单按钮，点击弹出的下拉菜单 -->
+<div class="collapse navbar-collapse" id="mobile_nav_dropdown">
+<!-- 手机: 左侧：版块 -->
+<nav class="nav navbar-nav channel">
+<a class="nav-link" data-active="index" href="index.html">首页</a>
+<a class="nav-link" href="bbs.htm">站长论坛</a>
+<a class="nav-link" href="doc.htm">技术文档</a>
+<a class="nav-link" href="forum-3.htm">精选模板</a>
+<a class="nav-link" href="user-login.htm">登陆</a>
+<a class="nav-link" href="user-create.htm">注册</a>
+</nav>
+</div>
+</div>
+</div>
+<!-- Mobile Navigation end -->
+</header>
+<main id="body">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 main">
+<div class="card card-thread">
+<div class="card-body">
+<div class="media">
+<a href="user-1.htm" tabindex="-1">
+<img class="avatar-3 mr-3" src="upload/avatar/000/1.png"/>
+</a>
+<div class="media-body">
+<h4 class="break-all">
+							
+							海洋CMS最新版发布													</h4>
+<div class="d-flex justify-content-between small" style="margin-top:8px;">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-1.htm">海洋</a>
+</span>
+<span class="date text-grey ml-2">2021-9-5</span>
+<span class="text-grey ml-2"><i class="icon-eye"></i> 68777</span>
+<span class="text-grey ml-2 haya-post-info-thread-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+<hr style="margin-top:8px;"/>
+<div class="message break-all" isfirst="1">
+<p><strong><span style="color:#c00000font-size:24pxfont-size:24pxfont-size:16px">安装文件 / 升级文件 下载：</span></strong><br/></p><p><a _href="https://www.seacms.com/download/" href="download/index.html" target="_blank" title=""><strong><span style="color:#c0504d">站内下载：https://www.seacms.com/download/</span></strong></a></p><p><span style="font-size:18pxcolor:#c0504d"><strong>GitHub源站：<a _href="https://github.com/seacmscom/down" href="../github.com/seacmscom/down" style="" target="_blank" title="">https://github.com/seacmscom/down</a></strong><br/></span></p><p><br/></p>
+<div class="text-right text-muted my-3 small font-italic">
+		最后于 <span class="icon-clock-o ml-2"> </span>2022-8-10		
+				被海洋编辑
+				
+		，原因： 		
+	</div>
+</div>
+<div class="plugin d-flex justify-content-center mt-3">
+<div class="haya-post-like px-2">
+<span class="btn-group" role="group">
+<button class="btn btn-outline-secondary js-haya-post-like-thread-tip" data-pid="1" title="点赞本帖">
+<i aria-label="点赞本帖" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-thread-btn">点赞</span>
+</button>
+<button class="btn btn-outline-secondary" data-tid="1" title="点赞数量">
+<span class="haya-post-like-thread-user-count">6</span>
+</button>
+</span>
+</div>
+<style>
+.haya-favoriter {
+	position: relative;
+}
+.haya-favorite-show-users {
+	position: absolute;
+	top: 5px;
+	z-index: 100;
+	width: 100%;
+}
+.haya-favorite-show-users .haya-favorite-users {
+	max-height: 250px;
+	overflow-y: auto;
+}
+</style>
+<div class="haya-favoriter px-2">
+<span class="btn-group haya-favoriter-info" role="group">
+<button class="btn btn-outline-secondary js-haya-favorite-tip" data-tid="1" title="收藏本帖">
+<i aria-label="收藏本帖" class="icon icon-star-o"></i>
+<span class="haya-favorite-btn">收藏</span>
+</button>
+<button class="btn btn-outline-secondary js-haya-favorite-show-users" data-tid="1" title="点击查看收藏详情">
+<span class="haya-favorite-user-count">0</span>
+</button>
+</span>
+</div>
+</div>
+<div class="haya-favoriter">
+<div class="text-center d-none haya-favorite-show-users">
+<div class="text-left m-0 p-0 col-md-6 mx-auto">
+<div class="modal-content">
+<div class="modal-header small">
+<b>收藏的用户（<span class="haya-favorite-user-count">0</span>）</b>
+<span class="close small p-3 haya-favorite-close js-haya-favorite-show-users" data-dismiss="dodal">X</span>
+</div>
+<div class="modal-body p-3">
+<div class="text-muted haya-favorite-users small break-all">
+<div class="text-muted">正在加载信息~</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-postlist">
+<div class="card-body">
+<div class="card-title">
+<div class="d-flex justify-content-between">
+<div>
+<b>最新回复</b> (<span class="posts">25</span>)
+						</div>
+<div>
+<div class="postlist-sort d-inline-block haya-post-info-post-orderby" data-tid="1" id="postlist">
+<span class="haya-post-info-see-lz">
+<span class="text-grey small">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看楼主</a>
+</span>
+</span>
+<span class="haya-post-info ml-2">
+<a class="text-grey small haya-post-sort-btn" href="thread-1.htm" tabindex="1" title="点击更改排序">
+<i class="asc"></i>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<ul class="list-unstyled postlist">
+<li class="media post" data-pid="2" data-uid="3">
+<a class="mr-3" href="user-3.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-3.htm">四二</a>
+</span>
+<span class="date text-grey ml-2">2021-9-6</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="2" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">2</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																不错，支持！！								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="3" data-uid="5">
+<a class="mr-3" href="user-5.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-5.htm">黑名单</a>
+</span>
+<span class="date text-grey ml-2">2021-9-7</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="3" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">3</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																不错，支持！！								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="4" data-uid="8">
+<a class="mr-3" href="user-8.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-8.htm">seo大佬</a>
+</span>
+<span class="date text-grey ml-2">2021-9-9</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="4" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">4</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																凑凑热闹								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="5" data-uid="6">
+<a class="mr-3" href="user-6.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-6.htm">淡忘丶小韩</a>
+</span>
+<span class="date text-grey ml-2">2021-9-10</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="5" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">5</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																支持，必须支持								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="6" data-uid="9">
+<a class="mr-3" href="user-9.htm" tabindex="-1">
+<img class="avatar-3" src="upload/avatar/000/9.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-9.htm">sun110</a>
+</span>
+<span class="date text-grey ml-2">2021-9-11</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="6" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">6</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																留个脚迹								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="142" data-uid="44">
+<a class="mr-3" href="user-44.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-44.htm">侬本多情</a>
+</span>
+<span class="date text-grey ml-2">2021-12-13</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="142" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">7</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																支持～～								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="180" data-uid="49">
+<a class="mr-3" href="user-49.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-49.htm">seraph0321</a>
+</span>
+<span class="date text-grey ml-2">2021-12-29</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="180" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">8</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																必须支持 								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="233" data-uid="60">
+<a class="mr-3" href="user-60.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-60.htm">alimenhu</a>
+</span>
+<span class="date text-grey ml-2">2022-1-26</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="233" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">9</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																留个脚迹								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="264" data-uid="71">
+<a class="mr-3" href="user-71.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-71.htm">zimozihua</a>
+</span>
+<span class="date text-grey ml-2">2022-2-27</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="264" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">1</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">10</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																不错，支持正版								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="355" data-uid="100">
+<a class="mr-3" href="user-100.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-100.htm">ailan</a>
+</span>
+<span class="date text-grey ml-2">2022-5-9</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="355" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">11</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																必须支持								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="466" data-uid="74">
+<a class="mr-3" href="user-74.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-74.htm">zhaoyixia521721</a>
+</span>
+<span class="date text-grey ml-2">2022-5-25</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="466" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">12</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																升级								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="556" data-uid="141">
+<a class="mr-3" href="user-141.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-141.htm">mingyuexin</a>
+</span>
+<span class="date text-grey ml-2">2022-9-2</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="556" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">13</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																必须支持								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="692" data-uid="122">
+<a class="mr-3" href="user-122.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-122.htm">2891371428</a>
+</span>
+<span class="date text-grey ml-2">2023-2-6</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="692" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">14</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																66								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="711" data-uid="210">
+<a class="mr-3" href="user-210.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-210.htm">haiyangcms</a>
+</span>
+<span class="date text-grey ml-2">2023-2-14</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="711" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">15</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																海洋老大，能不能把搜索页，和筛选列表页也做成伪静态，然后加上数据库缓存，不然数据过十万以后，网站就卡成幻灯片 了，只能提高服务器配置才行。								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="712" data-uid="210">
+<a class="mr-3" href="user-210.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-210.htm">haiyangcms</a>
+</span>
+<span class="date text-grey ml-2">2023-2-14</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="712" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">16</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																海洋cms设置宝塔自动采集教程<br/>https://www.seacms.com/thread-39.htm<br/>这个教程也该更新了，现在不能用了。								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="714" data-uid="1">
+<a class="mr-3" href="user-1.htm" tabindex="-1">
+<img class="avatar-3" src="upload/avatar/000/1.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-1.htm">海洋</a>
+</span>
+<span class="badge badge-secondary small haya-post-info-first-floor">
+			楼主
+		</span>
+<span class="date text-grey ml-2">2023-2-19</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="714" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">17</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+<blockquote class="blockquote">
+<a class="text-small text-muted user" href="user-210.htm">
+<img class="avatar-1" src="view/img/avatar.png"/>
+			haiyangcms
+		</a>
+		海洋老大，能不能把搜索页，和筛选列表页也做成伪静态，然后加上数据库缓存，不然数据过十万以后，网站就卡成幻灯片 了，只能提高服务器配置才行。
+		</blockquote>伪静态暂无计划。搜索本身已经支持缓存和精简搜索。								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="724" data-uid="217">
+<a class="mr-3" href="user-217.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-217.htm">3456mm</a>
+</span>
+<span class="date text-grey ml-2">2023-2-24</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="724" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">18</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																不错，支持！！								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="739" data-uid="221">
+<a class="mr-3" href="user-221.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-221.htm">tundou</a>
+</span>
+<span class="date text-grey ml-2">2023-3-10</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="739" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">19</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																zhic								
+								
+								
+																								
+							</div>
+</div>
+</li>
+<li class="media post" data-pid="825" data-uid="138">
+<a class="mr-3" href="user-138.htm" tabindex="-1">
+<img class="avatar-3" src="view/img/avatar.png"/>
+</a>
+<div class="media-body">
+<div class="d-flex justify-content-between small text-muted">
+<div>
+<span class="username">
+<a class="text-muted font-weight-bold" href="user-138.htm">lcl2026</a>
+</span>
+<span class="date text-grey ml-2">2023-8-28</span>
+<span class="text-grey ml-2 haya-post-info-post-see-him">
+<a class="text-grey" href="thread-1.htm" tabindex="1">只看Ta</a>
+</span>
+</div>
+<div class="text-right text-grey">
+<style>
+	.haya-post-like .haya-post-like-loved {
+		color: var(--secondary) !important;
+	}
+	</style>
+<span class="haya-post-like mr-3">
+<a class="text-muted js-haya-post-like-post-tip" data-pid="825" href="javascript:;" title="点赞回复">
+<i aria-label="点赞回复" class="icon icon-thumbs-o-up"></i>
+<span class="haya-post-like-post-user-count">0</span>
+</a>
+</span>
+<span class="floor-parent">
+<span class="floor mr-0">20</span>楼									</span>
+</div>
+</div>
+<div class="message mt-1 break-all">
+							
+								
+																
+								
+																后台可以加个管理员添加用户吗？								
+								
+								
+																								
+							</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="d-none threadlist"><input checked="" name="modtid" type="checkbox" value="1"/></div>
+<nav><ul class="pagination my-4 justify-content-center flex-wrap"><li class="page-item active"><a class="page-link" href="thread-1-1.htm">1</a></li><li class="page-item"><a class="page-link" href="thread-1-2.htm">2</a></li><li class="page-item"><a class="page-link" href="thread-1-2.htm">▶</a></li></ul></nav>
+<a class="btn btn-secondary btn-block xn-back col-lg-6 mx-auto mb-3" href="javascript:history.back();" role="button">返回</a>
+</div>
+<div class="col-lg-3 d-none d-lg-block aside">
+<a class="btn btn-primary btn-block mb-3" href="thread-create-6.htm" role="button">发新帖</a>
+<div class="card card-user-info">
+<div class="m-3 text-center">
+<a href="user-1.htm" tabindex="-1">
+<img class="avatar-5" src="upload/avatar/000/1.png"/>
+</a>
+<h5><a href="user-1.htm">海洋</a></h5>
+</div>
+<div class="card-footer p-2">
+<table class="w-100 small">
+<tr align="center">
+<td>
+<span class="text-muted">主题数</span><br/>
+<b>65</b>
+</td>
+<td>
+<span class="text-muted">帖子数</span><br/>
+<b>284</b>
+</td>
+<td>
+<span class="text-muted">注册排名</span><br/>
+<b>1</b>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="form-group">
+<form action="search.htm" id="search_form">
+<div class="input-group mb-3">
+<input class="form-control" name="keyword" placeholder="关键词" type="text"/>
+<div class="input-group-append">
+<button class="btn btn-primary" type="submit">搜索</button>
+</div>
+</div>
+</form>
+</div> <div class="card">
+<div class="card-body">
+<h6 class="card-title">作者最近主题：</h6>
+<ul class="small break-all">
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-391.htm">
+							 海洋CMS升级补丁:v13.3升级至v13.4						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-330.htm">
+							海洋CMS升级补丁:v13.2升级至v13.3						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-298.htm">
+							海洋CMS升级补丁:v13.1升级至v13.2						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-295.htm">
+							海洋CMS升级补丁:v13升级至v13.1						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-253.htm">
+							海洋CMS升级补丁:v12.9升级至v13						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-222.htm">
+							海洋CMS升级补丁:v12.8升级至v12.9						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-205.htm">
+							海洋CMS升级补丁:v12.7升级至v12.8						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-182.htm">
+							海洋CMS升级补丁:v12.6升级至v12.7						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-165.htm">
+							海洋CMS升级补丁:v12.5升级至v12.6						</a>
+</li>
+<li class="line-height-2" style="height: 28px;font-size: 14px;margin-left: -40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+<a href="thread-163.htm">
+							海洋CMS升级补丁:v12.4升级至v12.5						</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="text-muted small py-4 mt-3 hidden-sm hidden-md" style="background-color: #eee; color:#ccc;">
+<div class="container">
+<div class="row">
+<div class="col">
+<span class="qmfooter">SEACMS.COM</span>
+</div>
+<div class="col text-right">
+<span class="qmfooter">Processed: 0.028, SQL: 52</span>
+</div>
+</div>
+</div>
+</footer>
+<div class="hidden-lg" style="height:1px;margin-bottom: 99px;"> </div>
+<!--[if ltg IE 9]>
+	<script>window.location = 'browser.htm';</script>
+	<![endif]-->
+<script src="lang/zh-cn/bbs.js"></script>
+<script src="view/js/jquery-3.5.1.min.js"></script>
+<script src="view/js/popper.min.js"></script>
+<script src="view/js/bootstrap.min.js"></script>
+<script src="view/js/xiuno.min.js"></script>
+<script src="view/js/bootstrap-plugin.min.js"></script>
+<script src="view/js/async.min.js"></script>
+<script src="view/js/form.js"></script>
+<script>
+	var debug = DEBUG = 0;
+	var url_rewrite_on = 1;
+	var forumarr = {
+    "1": "使用交流",
+    "2": "模板风格",
+    "3": "精选模板",
+    "4": "插件整合",
+    "5": "教程帮助",
+    "6": "程序发布",
+    "7": "站长茶馆",
+    "8": "搜索优化",
+    "9": "技术分享",
+    "10": "交易市场",
+    "11": "站务处理"
+};
+	var fid = 6;
+	var uid = 0;
+	var gid = 0;
+	xn.options.water_image_url = 'view/img/water-small.png';	// 水印图片 / watermark image
+	</script>
+<script src="view/js/bbs.js"></script>
+<script>
+// 主题高亮
+$('.mod-button button.hlight').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var radios = xn.form_radio('hlight', {"0": "<span class=\"huux_thread_hlight_style0\">取消高亮</span>", "1": "<span class=\"huux_thread_hlight_style1\">风格一</span>","2": "<span class=\"huux_thread_hlight_style2\">风格二</span>", "3": "<span class=\"huux_thread_hlight_style3\">风格三</span>", "4": "<span class=\"huux_thread_hlight_style4\">风格四</span>", "5": "<span class=\"huux_thread_hlight_style5\">风格五</span>"});
+	$.confirm("设置主题为高亮", function() {
+		var tids = xn.implode('_', modtid);
+		var hlight = $('input[name="hlight"]').checked();
+		var postdata = {hlight: hlight};
+		$.xpost(xn.url('mod-hlight-'+tids), postdata, function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+"高亮风格"+'：'+radios+'</p>'});
+})
+</script>
+<script>
+var sg_sign_mobile = $('#sg_sign_mobile');
+sg_sign_mobile.on('click', function() {
+	var postdata = sg_sign_mobile.serialize();
+	$.xpost(xn.url('sg_sign'), postdata, function(code, message) {
+			$.alert(message);
+			sg_sign_mobile.delay(1000).location(xn.url('sg_sign'));
+	});
+	return false;
+});
+</script>
+<script src="plugin/tt_credits/view/js/tt_credits.js"></script>
+</body>
+</html>
+<div class="d-fixed hidden-sm hidden-md" id="scroll_to_top" style="position: fixed; _position: absolute; bottom: 10px; right: 10px; width: 70px; height: 70px; display: none;">
+<a href="javascript:void(0);" style="width: 70px; height: 70px; display: inline-block; background: url('plugin/xn_top/scroll_top.png') no-repeat; outline: none;" title="返回顶部"></a>
+</div>
+<script>
+// 返回顶部
+var jscroll_to_top = $('#scroll_to_top');
+$(window).scroll(function() {
+	if ($(window).scrollTop() >= 500) {
+	   jscroll_to_top.fadeIn(300);
+	} else {
+		jscroll_to_top.fadeOut(300);
+	}
+});
+
+jscroll_to_top.on('click', function() {
+	$('html,body').animate({scrollTop: '0px' }, 100);
+});
+</script>
+<script>
+var jform = $('#quick_reply_form');
+var jsubmit = $('#submit');
+jform.on('submit', function() {
+	jform.reset();
+	jsubmit.button('loading');
+	var postdata = jform.serialize();
+	$.xpost(jform.attr('action'), postdata, function(code, message) {
+		if(code == 0) {
+			var s = '<ul>'+message+'</ul>';
+			var jli = $(s).find('li');
+			jli.insertBefore($('.postlist > .post').last());
+			jsubmit.button('reset');
+			$('#message').val('');
+			
+			// 楼层 +1
+			var jfloor = $('#newfloor');
+			jfloor.html(xn.intval(jfloor.html()) + 1);
+			
+			// 回复数 +1
+			var jposts = $('.posts');
+			jposts.html(xn.intval(jposts.html()) + 1);
+			
+		} else if(code < 0) {
+			$.alert(message);
+			jsubmit.button('reset');
+		} else {
+			jform.find('[name="'+code+'"]').alert(message).focus();
+			jsubmit.button('reset');
+		}
+	});
+	return false;
+});
+
+
+// 缩放图片，适应屏幕大小。
+function resize_image() {
+	var jmessagelist = $('div.message');
+	var first_width = jmessagelist.width(); // 815 : 746; //  734 746
+	jmessagelist.each(function() {
+		var jdiv = $(this);
+		var maxwidth = jdiv.attr('isfirst') ? first_width : jdiv.width(); //  734 746
+		var jmessage_width = Math.min(jdiv.width(), maxwidth);
+		jdiv.find('img, embed, iframe, video').each(function() {
+			var jimg = $(this);
+			var img_width = this.org_width;
+			var img_height = this.org_height;
+			if(!img_width) {
+				var img_width = jimg.attr('width');
+				var img_height = jimg.attr('height');
+				this.org_width = img_width;
+				this.org_height = img_height;
+			}
+			//var percent = xn.min(100, xn.ceil((img_width / jmessage_width) * 100));
+			if(img_width > jmessage_width) {
+				if(this.tagName == 'IMG') {
+					jimg.width(jmessage_width);
+					jimg.css('height', 'auto');
+					jimg.css('cursor', 'pointer');
+					jimg.on('click', function() {
+						//window.open(jimg.attr('src'));
+					});
+				} else {
+					jimg.width(jmessage_width);
+					var height = (img_height / img_width) * jimg.width();
+					jimg.height(height);
+				}
+			}
+		});
+	});
+}
+
+// 对于超宽的表格，加上响应式
+function resize_table() {
+	$('div.message').each(function() {
+		var jdiv = $(this);
+		jdiv.find('table').addClass('table').wrap('<div class="table-responsive"></div>'); 
+	});
+}
+
+$(function() {
+	resize_image();
+	resize_table();
+	$(window).on('resize', resize_image);
+});
+
+// 输入框自动伸缩
+
+var jmessage = $('#message');
+jmessage.on('focus', function() {if(jmessage.t) { clearTimeout(jmessage.t); jmessage.t = null; } jmessage.css('height', '8rem'); });
+jmessage.on('blur', function() {jmessage.t = setTimeout(function() { jmessage.css('height', '2.5rem');}, 1000); });
+
+$('li[data-active="fid-6"]').addClass('active');
+
+</script>
+<script>
+	//Gingerbbs 回复提醒
+	window.onload = function(){
+		var url = window.location.href;
+		if(/#/.test(url)){
+			url = url.split('#');
+			id = url[1];
+			var height = $("a[pid='"+id+"']").offset().top;
+			$('html body').scrollTop(height);
+		}
+	}
+</script><script>
+$(document).on('click', '.js-haya-favorite-show-users', function() {
+	var show_users = $(".haya-favorite-show-users");
+	var tid = $(this).attr("data-tid");
+	if (show_users.hasClass("d-none")) {
+		show_users.fadeIn().removeClass("d-none");
+		if (!show_users.hasClass("favorite-users")) {
+			show_users.addClass("favorite-users");
+			
+			var url = 'thread-favorite.htm';
+			$.xpost(url, {'tid': tid}, function(code, msg) {
+				if (code == 1) {
+					show_users.find(".haya-favorite-users").html(msg);
+				} else {
+					show_users.removeClass("favorite-users");
+					haya_favorite_msg = msg || "加载信息失败~";
+					show_users.find(".haya-favorite-users").html(haya_favorite_msg);
+				}
+			});
+		}
+	} else {
+		show_users.fadeOut().addClass("d-none");
+	}
+});
+
+$(document).on('click', '.js-haya-favorite-tip', function() {
+	$.confirm('帖子收藏提示', function() {
+		window.location = "user-login.htm";
+	}, {'body': '登录后才可以收藏帖子！点击 <b class="text-primary">确定</b> 登录。'});		
+});
+</script>
+<script>
+		$(document).on('click', '.js-haya-post-like-thread-tip', function() {
+		$.confirm('点赞提示', function() {
+			window.location = "user-login.htm";
+		}, {'body': '登录后才可以点赞本帖！点击 <b class="text-primary">确定</b> 登录。'});		
+	});
+	
+		$(document).on('click', '.js-haya-post-like-post-tip', function() {	
+		$.confirm('点赞提示', function() {
+			window.location = "user-login.htm";
+		}, {'body': '登录后才可以点赞该回复！点击 <b class="text-primary">确定</b> 登录。'});		
+	});
+	</script>
+<script>
+        $(function(){
+                // 消息：地址栏传参实现内页跳转[分页无效]
+                var notice_postid = window.location.hash.split("#")[1];
+                var notice_domid = $('.postlist .post[data-pid="'+notice_postid+'"]');
+                if(notice_domid.length > 0){
+                    notice_domid.addClass('current');//
+                    var scroll_offset = notice_domid.offset().top;
+                    $("html, body").animate({scrollTop:scroll_offset}, {duration:500, easing:"swing"});
+                    notice_domid.on('click', function(){
+                        $(this).removeClass('current');
+                    })
+                }
+        }); 
+</script><script>
+$('li[data-active="bbs"]').addClass('active');
+</script><script>
+jsearch_form = $('#search_form');
+jsearch_form.on('submit', function() {
+	var keyword = jsearch_form.find('input[name="keyword"]').val();
+	var url = xn.url('search-'+xn.urlencode(keyword));
+	window.location = url;
+	return false;
+});
+</script><script>
+// 语法高亮
+if($('div.message pre').length > 0) {
+	$.require_css('plugin/xn_syntax_hightlighter/syntax_hightlighter/syntax.css');
+	$.require('plugin/xn_syntax_hightlighter/syntax_hightlighter/syntax.js', function() {
+		SyntaxHighlighter.all();
+	});
+}
+</script>

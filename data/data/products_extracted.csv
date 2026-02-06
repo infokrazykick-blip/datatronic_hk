@@ -1,0 +1,46 @@
+page,title_en,description_en
+fluid,Fluid Sensors,Precision fluid level and condition monitoring solutions for industrial applications
+implantable_coils,Implantable Coils,Precision coils for implantable medical devices
+medical_application_coils,Medical Application Coils,Precision coils for diagnostic and therapeutic medical applications
+inductors_shielded_smt,"Inductors, Shielded, SMT",Shielded surface-mount technology inductors for high-frequency applications with inductance range from 0.47µH to 10000µH
+inductors_shielded_thru_hole,"Inductors, Shielded, Thru-hole",Shielded through-hole inductors for power and signal applications with inductance range from 1µH to 15mH
+inductors_unshielded_smt,"Inductors, Unshielded, SMT",Unshielded surface-mount technology inductors for general applications with inductance range from 0.12µH to 10mH
+inductors_unshielded_thru_hole,"Inductors, Unshielded, Thru-hole","Unshielded through-hole inductors for power supply, EMI filtering, and general applications"
+lighting_custom,Lighting Magnetic Components (Customizable),"Custom lighting magnetic components for LED, fluorescent, and specialty lighting applications"
+lighting_flap,Flap Ballast Transformers,Flap-type ballast transformers for standard lighting systems
+lighting,Lighting Magnetic Components,Magnetic components designed for LED and lighting applications
+maglev_coils,MagLev Coils,"Magnetic levitation precision coils for automotive drive and suspension systems, high-speed rail applications"
+medical,Medical Application Coils,Specialized coils for medical device and diagnostic equipment applications
+perfect_layer_coils,Perfect Layer Coils,Precision multi-layer wound coils for high-performance electromagnetic applications
+pickup_coils,Pickup Coils,High-sensitivity magnetic signal pickup coils for sensors and measurement systems
+position_sensor,Position Sensors,"Ultra-high resolution linear displacement coils for aerospace, industrial, and precision applications"
+power_inductors,"Inductors, Shielded, SMT",Shielded surface-mount technology inductors for high-frequency applications with inductance range from 0.47µH to 10000µH
+power_transformers,Power Transformers,Customizable power transformers for industrial power applications
+pt_400hz,400Hz Transformers,High-frequency 400Hz transformers for aviation and specialized applications
+pt_audio,Audio Transformers,Audio-grade transformers for signal coupling and impedance matching
+pt_auto,Auto Transformers,Auto transformers for voltage adjustment and control
+pt_distribution,Distribution Transformers,Distribution transformers for power distribution networks
+pt_ferro,Ferro Resonant Transformers,Ferro resonant transformers for constant voltage regulation
+pt_isolation,Isolation Transformers,Isolation transformers for electrical safety and noise reduction
+pt_shielded,Shielded Transformers,Shielded transformers for EMI/RFI protection
+pt_step_control,50/60Hz Step/Control Transformers,Step and control transformers for 50/60Hz power systems
+pt_step_down,Step Down Transformers,High-capacity step down transformers for industrial applications
+pt_three_phase,Three Phase Transformers,Heavy-duty three-phase transformers for industrial power distribution
+solenoid_coils,Solenoid Coils,"Electromagnetic solenoid coils rated 24V to 575V, 60 to 400Hz for automotive, electric vehicle, and industrial control applications. Custom-engineered for actuation and control systems with comprehensive quality management."
+sp_current_sense_smt,Current Sense,SMT
+sp_current_sense_thru_hole,"Transformers, Current Sense, Thru-hole",Through-hole current sense transformers for high-power switching applications and industrial equipment with enhanced thermal performance. Designed for robust installation in industrial environments.
+sp_gate_drive_smt,"Gate Drive & Pulse XFMR, SMT",Surface-mount gate drive and pulse transformers designed for power semiconductor switching applications and signal isolation in high-frequency circuits.
+sp_gate_drive_thru_hole,"Gate Drive & Pulse XFMR, Thru-hole",Through-hole gate drive and pulse transformers for high-power switching applications with robust construction designed for industrial power conversion systems.
+speed_sensor,Speed Sensors,Precision velocity and rotational speed monitoring coils for motion control systems
+switching_power,Switching Power Magnetic Components,High-efficiency magnetic components for switching power applications
+telemetry_coils,Telemetry Coils,Specialized coils for remote data transmission and wireless telemetry applications
+transformers_choke,Transformers and Choke Coils,Custom transformers and choke coils for various industrial applications
+wb_air_core,"Inductors, Air Core",Air core inductors designed for minimal loss applications and low loss RF coils
+wb_hf_wirewound,"Inductors, High Frequency Wirewound",High-frequency wirewound inductors designed for broadband applications
+wb_rf,"Transformers, RF, Wideband",Wideband RF transformers designed for high-frequency signal processing and broadband communication applications
+wideband,Wideband Transformers,Wideband transformers for high-frequency RF and signal applications
+balancing_transformer,Balancing Transformer,Precision balancing transformers for signal conditioning and impedance matching applications
+comm_magnetic,Communication Magnetic Components,Specialized magnetic components for telecommunications and RF applications
+comm_telecom_smt,"Transformers, Telecom, SMT",Surface mount telecom transformers for compact circuit applications and telecommunications
+comm_telecom_thru_hole,"Transformers, Telecom, Thru Hole",Through-hole telecom transformers for traditional PCB assembly and telecommunications
+current_sense,Current Sense Transformers,Customizable current sense transformers for measurement and monitoring

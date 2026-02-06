@@ -1,0 +1,19 @@
+# Suggested redirects (old -> new)
+# Review and adjust paths before applying to hosting provider (Netlify _redirects or server config)
+
+# Home
+https://datatronic.com.hk/    /
+
+# Pages (example format)
+https://datatronic.com.hk/en/%E7%94%A2%E5%93%81%E4%B8%AD%E5%BF%83/    /en-%e7%94%a2%e5%93%81%e4%b8%ad%e5%bf%83/
+https://datatronic.com.hk/en/catalogue/    /en-catalogue/
+https://datatronic.com.hk/en/%E9%97%9C%E6%96%BC%E6%88%91%E5%80%91/    /en-%e9%97%9c%e6%96%bc%e6%88%91%e5%80%91/
+
+# Sample redirects added during review
+https://datatronic.com.hk/en/catalogue/    /en-catalogue/
+https://datatronic.com.hk/    /
+https://datatronic.com.hk/en/%E7%94%A2%E5%93%81%E4%B8%AD%E5%BF%83/    /en-catalogue/    # check if product category should map to catalogue or product index
+
+# Notes:
+# - Current imported files use generated slugs like `en-...` (percent-encoded). We recommend reviewing and optionally normalizing slugs into human-friendly ASCII (e.g., `en-products-center` -> `products`).
+# - After slug normalization, update these redirects to point to the final permalinks.

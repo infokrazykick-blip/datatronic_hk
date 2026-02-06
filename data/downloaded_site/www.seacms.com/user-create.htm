@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description">
+<meta content="webkit" name="renderer"/>
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="no-transform" http-equiv="Cache-Control">
+<meta content="no-siteapp" http-equiv="Cache-Control">
+<title>创建用户</title>
+<link href="view/img/favicon.ico" rel="shortcut icon"/>
+<link href="view/img/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="view/img/favicon.ico" rel="Bookmark">
+<link href="plugin/msdn_theme_blue/css/bootstrap.css" rel="stylesheet"/>
+<link href="plugin/msdn_theme_blue/css/bootstrap-bbs.css" rel="stylesheet"/>
+<link href="plugin/huux_notice/view/css/huux-notice.css" name="huux_notice" rel="stylesheet"/>
+<style>
+.bottom-nav {
+    /* display: none; */
+    background-color: white;
+}
+
+.nav_font{
+	font-size:12px;
+	color:#8590a6;
+	margin-top:2px;
+}
+
+
+.bottom-nav .opts-group {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 6px; */
+    line-height: 20px;
+    color: #9e9e9e;
+    cursor: pointer;
+}
+.bottom-nav .opts-group.active {
+    color: #da5b62;
+}
+@media screen and (min-width: 992px) {
+    .bottom-nav, .header_seach_but {
+        display: none !important;
+    }
+</style><style>
+.haya-post-info-username.today .username {
+	color: var(--danger) !important;
+}
+.haya-post-info-username.today .date {
+	color: var(--danger) !important;
+}
+</style>
+<style data-model="huux_hlight" type="text/css">.huux_thread_hlight_style1{color: #D9534D;font-weight:normal}.huux_thread_hlight_style2{color: #F0AD4E;font-weight:normal}.huux_thread_hlight_style3{color: #5BC0DE;font-weight:normal}.huux_thread_hlight_style4{color: #5CB85C;font-weight:normal}.huux_thread_hlight_style5{color: #337AB7;font-weight:normal}</style><style>
+.letone #sidebar.mibbs_con{background-color:#08599E;height:52px;position:relative;}
+.mibbs_con .mibbs_signpanel{height:50px;display:block;position:relative;background-color:#08599E;background-image:url(./plugin/sg_sign_vip/img/tou.png);background-repeat:no-repeat;background-position:14px 8px;cursor:pointer;}
+.mibbs_con .mibbs_signpanel .font{position:absolute;color:#fff;width:48px;text-align:center;height:30px;font-size:16px;line-height:30px;top:11px;left:44px;}
+.mibbs_con .mibbs_signpanel .nums{display:none;}.mibbs_con .mibbs_signpanel .fblock{height:46px;width:130px;background-color:#fff;padding-left:5px;padding-right:5px;position:absolute;top:2px;right:2px;font-size:14px;color:#606060;}
+.mibbs_con .mibbs_signpanel .fblock .all{height:23px;line-height:26px;padding-left:30px;border-bottom:1px solid #eee;background-image:url(./plugin/sg_sign_vip/img/tou2.jpg);background-repeat:no-repeat;background-position:5px 0;margin-bottom:0;color:#606060;}
+.mibbs_con .mibbs_signpanel .fblock .line{height:22px;line-height:24px;padding-left:30px;width:130px;background-image:url(./plugin/sg_sign_vip/img/tou2.jpg);background-repeat:no-repeat;background-position:5px -25px;color:#606060;}
+.mibbs_con .visted .font{font-size:20px;line-height:25px;width:60px;left:46px;top:8px;text-shadow:0 1px 0 #ff4921;}
+</style><link href="plugin/xiuno_top__list_block/css/css.css" rel="stylesheet"/>
+<style type="text/css">
+.img_wap{
+ width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+  }
+
+  .img_wap img{
+    width: 100%;
+  height: 100%;
+  
+  position: absolute;  
+  }
+    .plugin_list {
+        display: inline-block;
+    	
+    	border-bottom: 0px;
+    	margin: 6px 3px;
+    	border-radius:2px;
+    }
+	.plugin_list:hover {
+	    box-shadow: 1px 1px 8px 3px #adb9c5;
+		display: inline-block;
+		border-radius:2px;
+	}
+
+@media (max-width: 991px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 32% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+
+    @media (max-width: 768px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 48% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+     @media (max-width: 510px) {
+        .plugin_list {
+            display: inline-block;
+        	width: 100% !important;
+        	border-bottom: 0px;
+
+            margin: 6px 3px;
+            border-radius:2px;
+        }
+    	.plugin_list:hover {
+            box-shadow: 1px 1px 8px 3px #adb9c5;
+            display: inline-block;
+            border-radius:2px;
+    	}
+    }
+	</style><style>
+/*
+.toggle_more {
+	max-height: 100px;
+}
+*/
+.update_log_list a.update_log_history, 
+.update_log_list a.update_log_delete {
+	display: none;
+}
+
+.update_log_list > li:hover {
+	background: var(--gray-300);
+}
+.update_log_list > li:hover > a.update_log_history, 
+.update_log_list > li:hover > a.update_log_delete {
+	display: inline-block;
+}
+
+</style>
+</link></meta></meta></meta></head>
+<body>
+<div class="position-fixed w-100 header_fiexd bottom-nav" style="width: 100%; height: 55px; bottom: 0; z-index: 1000;border-top: 1px solid rgb(239, 239, 239);">
+<div class="row mx-0 text-center align-items-center" style="height: 55px;">
+<a class="col" href="bbs.htm" style="max-width: 20%;">
+<div>
+<img alt="最新" border="0" src="view/img/8wDlpd.png" width="25px"/>
+</div>
+<div class="nav_font">
+                最新
+            </div>
+</a>
+<a class="col" data-target="#forum" data-toggle="modal" style="max-width: 20%;">
+<div>
+<img alt="版块" border="0" src="view/img/8wDFp9.png" width="25px"/>
+</div>
+<div class="nav_font">
+                版块
+            </div>
+</a>
+<a class="col" href="thread-create-0.htm" style="max-width: 20%;">
+<div>
+<img alt="发主题" border="0" src="view/img/8wDEOx.png" width="40px"/>
+</div>
+</a>
+<a class="col" href="search.htm" style="max-width: 20%;">
+<div>
+<img alt="搜索" border="0" src="view/img/8wDMfH.png" width="25px"/>
+</div>
+<div class="nav_font">
+                搜索
+            </div>
+</a>
+<a class="col" href="my-notice.htm" style="max-width: 20%;">
+<div>
+<img alt="我的" border="0" src="view/img/8wDKte.png" width="25px"/>
+</div>
+<div class="nav_font">
+                我的
+            </div>
+</a>
+</div>
+</div>
+<div aria-hidden="true" class="modal md-effect-1" id="forum" style="display: none;">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">分类导航</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<ul class="list-group list-group-flush">
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-1" fid="1">
+<a class="nav-link" href="forum-1.htm"><i class="icon-comments d-md-none"></i> 使用交流<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-2" fid="2">
+<a class="nav-link" href="forum-2.htm"><i class="icon-comments d-md-none"></i> 模板风格<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-3" fid="3">
+<a class="nav-link" href="forum-3.htm"><i class="icon-comments d-md-none"></i> 精选模板<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-4" fid="4">
+<a class="nav-link" href="forum-4.htm"><i class="icon-comments d-md-none"></i> 插件整合<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-5" fid="5">
+<a class="nav-link" href="forum-5.htm"><i class="icon-comments d-md-none"></i> 教程帮助<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-6" fid="6">
+<a class="nav-link" href="forum-6.htm"><i class="icon-comments d-md-none"></i> 程序发布<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-7" fid="7">
+<a class="nav-link" href="forum-7.htm"><i class="icon-comments d-md-none"></i> 站长茶馆<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-8" fid="8">
+<a class="nav-link" href="forum-8.htm"><i class="icon-comments d-md-none"></i> 搜索优化<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-9" fid="9">
+<a class="nav-link" href="forum-9.htm"><i class="icon-comments d-md-none"></i> 技术分享<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-10" fid="10">
+<a class="nav-link" href="forum-10.htm"><i class="icon-comments d-md-none"></i> 交易市场<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+<li class="nav-item hidden-lg justify-content-between align-items-center" data-active="fid-11" fid="11">
+<a class="nav-link" href="forum-11.htm"><i class="icon-comments d-md-none"></i> 站务处理<span style="float:right"><span class="badge badge-info">访问</span></span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- 
+		二级导航：一般用作 CMS 、企业站、商城、等多频道需求的站点
+		Xiuno BBS 4.0 的 PC/Mobile 分离写法 
+		优点：结构清晰
+		缺点：有重复代码
+	-->
+<header id="header">
+<!-- PC Navigation start -->
+<div class="navbar navbar-dark bg-dark navbar-expand-lg hidden-sm hidden-md">
+<div class="container" id="pc_nav">
+<!-- PC: logo -->
+<a class="navbar-brand text-truncate" href="index.html" style="padding:0;margin-left: -3px;">
+<img src="plugin/xn_nav_2/view/img/logo_pc.png" style="height:28px;margin-right:9px;"/>
+</a>
+<style>
+				.active{background-color: #7194c0;}
+				.active a{ color:#FFF;}
+				.active a:hover{ color:#FFF;}
+				</style>
+<!-- PC: 左侧：主要导航菜单 -->
+<ul class="navbar-nav mr-auto" style="margin-top: 3px;">
+<li class="nav-item home"><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-item home"><a class="nav-link" href="bbs.htm">站长论坛</a></li>
+<li class="nav-item home"><a class="nav-link" href="doc.htm">技术文档</a></li>
+<li class="nav-item home"><a class="nav-link" href="forum-3.htm">精选模板</a></li>
+</ul>
+<!-- PC: 右侧：用户 -->
+<ul class="navbar-nav">
+<li class="nav-item hidden-lg"><a class="nav-link" href="#" id="sg_sign_mobile"><i class="icon-gift"></i> 签到</a></li><li class="nav-item hidden-lg">
+<a class="nav-link" href="search.htm"><i class="icon-search"></i> 搜索</a>
+</li>
+<li class="nav-item"><a class="nav-link" href="user-login.htm"><i class="icon-user"></i> 登录</a></li>
+</ul>
+</div>
+</div>
+<!-- pc 的版块列表 -->
+<!-- 版块放在第二级别显示 -->
+<!-- PC Navigation end -->
+<!-- Mobile Navigation start -->
+<div class="navbar navbar-dark bg-dark navbar-expand-lg hidden-lg">
+<div class="container" id="mobile_nav">
+<!-- 左侧：菜单按钮 -->
+<button aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单" class="navbar-toggler" data-target="#mobile_nav_dropdown" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- 中间的 LOGO、网站标题 -->
+<a class="navbar-brand text-truncate" href="index.html" style="padding:0;">
+<img src="view/img/logo.png" style="height:35px;"/>
+</a>
+<!-- 右侧的用户登录、发帖图标 -->
+<a aria-label="首页" class="navbar-brand" href="index.html"> <i class="icon-home"></i></a>
+<!-- 左侧：菜单按钮，点击弹出的下拉菜单 -->
+<div class="collapse navbar-collapse" id="mobile_nav_dropdown">
+<!-- 手机: 左侧：版块 -->
+<nav class="nav navbar-nav channel">
+<a class="nav-link" data-active="index" href="index.html">首页</a>
+<a class="nav-link" href="bbs.htm">站长论坛</a>
+<a class="nav-link" href="doc.htm">技术文档</a>
+<a class="nav-link" href="forum-3.htm">精选模板</a>
+<a class="nav-link" href="user-login.htm">登陆</a>
+<a class="nav-link" href="user-create.htm">注册</a>
+</nav>
+</div>
+</div>
+</div>
+<!-- Mobile Navigation end -->
+</header>
+<main id="body">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 mx-auto">
+<div class="card">
+<div class="card-header">
+				用户注册				
+			</div>
+<div class="card-body">
+<form action="user-create.htm" id="form" method="post">
+<div class="form-group input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="icon icon-envelope icon-fw"></i></span>
+</div>
+<input class="form-control" id="email" name="email" placeholder="Email" required="" type="email"/>
+</div>
+<div class="form-group input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="icon icon-user icon-fw"></i></span>
+</div>
+<input class="form-control" id="username" name="username" placeholder="用户名" type="text"/>
+</div>
+<div class="media">
+<div class="media-body">
+<div class="form-group input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="icon icon-lock icon-fw"></i></span>
+</div>
+<input class="form-control" id="password" name="password" placeholder="密码" type="password"/>
+</div>
+</div>
+</div>
+<div class="media">
+<div class="media-body">
+<div class="form-group input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="icon icon-lock icon-fw"></i></span>
+</div>
+<input class="form-control" id="repeat_password" name="repeat_password" placeholder="再输入一次密码" type="password"/>
+</div>
+</div>
+</div><div class="form-group input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="icon icon-send icon-fw"></i></span>
+</div>
+<input class="form-control" id="promote_code" name="promote_code" placeholder="推广码 (可不填)" type="text" value=""/>
+</div>
+<div class="form-group">
+<button class="btn btn-primary btn-block" data-loading-text="正在提交..." id="submit" type="submit">下一步</button>
+</div>
+<div class="media">
+<div>
+</div>
+<div class="media-body text-right">
+<a class="text-muted" href="user-login.htm"><small>用户登录</small></a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="text-muted small py-4 mt-3 hidden-sm hidden-md" style="background-color: #eee; color:#ccc;">
+<div class="container">
+<div class="row">
+<div class="col">
+<span class="qmfooter">SEACMS.COM</span>
+</div>
+<div class="col text-right">
+<span class="qmfooter">Processed: 0.014, SQL: 9</span>
+</div>
+</div>
+</div>
+</footer>
+<div class="hidden-lg" style="height:1px;margin-bottom: 99px;"> </div>
+<!--[if ltg IE 9]>
+	<script>window.location = 'browser.htm';</script>
+	<![endif]-->
+<script src="lang/zh-cn/bbs.js"></script>
+<script src="view/js/jquery-3.5.1.min.js"></script>
+<script src="view/js/popper.min.js"></script>
+<script src="view/js/bootstrap.min.js"></script>
+<script src="view/js/xiuno.min.js"></script>
+<script src="view/js/bootstrap-plugin.min.js"></script>
+<script src="view/js/async.min.js"></script>
+<script src="view/js/form.js"></script>
+<script>
+	var debug = DEBUG = 0;
+	var url_rewrite_on = 1;
+	var forumarr = {
+    "1": "使用交流",
+    "2": "模板风格",
+    "3": "精选模板",
+    "4": "插件整合",
+    "5": "教程帮助",
+    "6": "程序发布",
+    "7": "站长茶馆",
+    "8": "搜索优化",
+    "9": "技术分享",
+    "10": "交易市场",
+    "11": "站务处理"
+};
+	var fid = 0;
+	var uid = 0;
+	var gid = 0;
+	xn.options.water_image_url = 'view/img/water-small.png';	// 水印图片 / watermark image
+	</script>
+<script src="view/js/bbs.js"></script>
+<script>
+// 主题高亮
+$('.mod-button button.hlight').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var radios = xn.form_radio('hlight', {"0": "<span class=\"huux_thread_hlight_style0\">取消高亮</span>", "1": "<span class=\"huux_thread_hlight_style1\">风格一</span>","2": "<span class=\"huux_thread_hlight_style2\">风格二</span>", "3": "<span class=\"huux_thread_hlight_style3\">风格三</span>", "4": "<span class=\"huux_thread_hlight_style4\">风格四</span>", "5": "<span class=\"huux_thread_hlight_style5\">风格五</span>"});
+	$.confirm("设置主题为高亮", function() {
+		var tids = xn.implode('_', modtid);
+		var hlight = $('input[name="hlight"]').checked();
+		var postdata = {hlight: hlight};
+		$.xpost(xn.url('mod-hlight-'+tids), postdata, function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+"高亮风格"+'：'+radios+'</p>'});
+})
+</script>
+<script>
+var sg_sign_mobile = $('#sg_sign_mobile');
+sg_sign_mobile.on('click', function() {
+	var postdata = sg_sign_mobile.serialize();
+	$.xpost(xn.url('sg_sign'), postdata, function(code, message) {
+			$.alert(message);
+			sg_sign_mobile.delay(1000).location(xn.url('sg_sign'));
+	});
+	return false;
+});
+</script>
+<script src="plugin/tt_credits/view/js/tt_credits.js"></script>
+</body>
+</html>
+<div class="d-fixed hidden-sm hidden-md" id="scroll_to_top" style="position: fixed; _position: absolute; bottom: 10px; right: 10px; width: 70px; height: 70px; display: none;">
+<a href="javascript:void(0);" style="width: 70px; height: 70px; display: inline-block; background: url('plugin/xn_top/scroll_top.png') no-repeat; outline: none;" title="返回顶部"></a>
+</div>
+<script>
+// 返回顶部
+var jscroll_to_top = $('#scroll_to_top');
+$(window).scroll(function() {
+	if ($(window).scrollTop() >= 500) {
+	   jscroll_to_top.fadeIn(300);
+	} else {
+		jscroll_to_top.fadeOut(300);
+	}
+});
+
+jscroll_to_top.on('click', function() {
+	$('html,body').animate({scrollTop: '0px' }, 100);
+});
+</script>
+<script src="view/js/md5.js"></script>
+<script>
+var jform = $('#form');
+var jsubmit = $('#submit');
+var jsend = $('#sendcode');
+var referer = '';
+jsend.on('click', function() {
+	jform.reset();
+	jsend.button('loading');
+	var postdata = jform.serialize();
+	$.xpost(jsend.attr('action'), postdata, function(code, message) {
+		if(code == 0) {
+			$('#code').focus();
+			var t = 60; // 倒计时
+			jsend.button('发送成功 60 ');
+			jsubmit.button('reset');
+			// 倒计时，重新发送
+			var handler = setInterval(function() {
+				jsend.button('发送成功 '+(--t)+' ');
+				if(t == 0) {
+					clearInterval(handler);
+					jsend.button('reset');
+				}
+			}, 1000);
+		} else if(code < 0) {
+			$.alert(message, -1);
+			jsend.button('reset');
+		} else {
+			jform.find('[name="'+code+'"]').alert(message).focus();
+			jsend.button('reset');
+		}
+	});
+	return false;
+});
+
+jform.on('submit', function() {
+	var postdata = jform.serializeObject();
+	jsubmit.button('loading');
+	postdata.password = $.md5(postdata.password);
+	$.xpost(jform.attr('action'), postdata, function(code, message) {
+		if(code == 0) {
+			jsubmit.button(message).delay(1000).location(referer);
+		} else if(xn.is_number(code)) {
+			alert(message);
+			jsubmit.button('reset');
+		} else {
+			jform.find('[name="'+code+'"]').alert(message).focus();
+			jsubmit.button('reset');
+		}
+	});
+	return false;
+});
+
+</script>
