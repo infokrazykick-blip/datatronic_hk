@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Datatronic - Applications</title>
+<meta content="Datatronic - Applications across Medical, Aerospace, Telecom, EV, Industrial" name="description"/>
+<meta content="applications, medical, aerospace, telecom, electric vehicle" name="keywords"/>
+<!-- Bootstrap 5 -->
+<link href="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+<link href="fonts.googleapis.com/css2" rel="stylesheet"/>
+<link href="unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet"/>
+<script src="unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+<script src="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script src="unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Keep styles consistent -->
+<link href="css/common.css" rel="stylesheet"/>
+</head>
+<body class="solid-nav" id="top">
+<!-- NAV / CONTACT SIDEBAR (copied from template for consistency) -->
+<nav id="navbar">
+<div class="logo">
+<img alt="Datatronic Logo" src="images/logo.png"/>
+</div>
+<div class="nav-links" id="navLinks">
+<a data-i18n="home" href="index.html">Home</a>
+<a data-i18n="about_us" href="about.html">About Us</a>
+<a data-i18n="products" href="products.html">Products</a>
+<a data-i18n="catalogue" href="catalogue.html">Catalogue</a>
+<a class="active" data-i18n="applications" href="applications.html">Applications</a>
+<a data-i18n="awards" href="awards.html">Awards</a>
+<a data-i18n="contact_us" href="contact.html">Contact Us</a>
+<div class="dropdown">
+<button class="dropdown-btn" data-i18n="language">EN</button>
+<div class="dropdown-content">
+<a href="#" onclick="changeLanguage('en')">EN</a>
+<a href="#" onclick="changeLanguage('ja')">JP</a>
+<a href="#" onclick="changeLanguage('cn')">CN</a>
+</div>
+</div>
+</div>
+<div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+<!-- Contact sidebar (left) -->
+<div class="collapsed" id="contactSidebar">
+<div class="mystickyelement-lists-wrap">
+<ul class="mystickyelements-lists mysticky">
+<li aria-label="Toggle contact sidebar" class="mystickyelements-minimize" onclick="toggleSidebar()" role="button" tabindex="0">→</li>
+<li class="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on" id="mystickyelements-social-phone" role="button" tabindex="0" title="Call us">
+<span aria-expanded="false" aria-haspopup="true" class="mystickyelements-social-icon social-phone social-custom" data-flyout="phone"><i class="fa fa-phone"></i></span>
+<div aria-hidden="true" class="mystickyelements-flyout phone-flyout"><div class="flyout-inner"><a href="tel:(852) 61852303" style="color:inherit; text-decoration:none; font-weight:700;" title="(852) 61852303">(852) 61852303</a></div></div>
+</li>
+<li class="mystickyelements-social-icon-li mystickyelements-social-wechat element-desktop-on element-mobile-on" id="mystickyelements-social-wechat" role="button" tabindex="0" title="WeChat ID: datatron">
+<span class="mystickyelements-social-icon social-wechat social-custom" data-flyout="wechat"><i class="fab fa-weixin"></i></span>
+<div aria-hidden="true" class="mystickyelements-flyout"><div class="flyout-inner"><img alt="WeChat QR code (Datatronic)" loading="lazy" src="images/logo.png"><p>WeChat: datatron</p></img></div></div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="container" style="padding-top:88px;">
+<section class="py-5">
+<div class="row">
+<div class="col-12 text-center">
+<h1>Applications</h1>
+<p class="lead">We provide industry-focused solutions across a wide range of applications, delivering reliable, custom magnetic components for demanding markets.</p>
+</div>
+</div>
+<div class="row mt-4">
+<!-- 1: Implantable Medical Device -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="Implantable Medical Device" class="img-fluid mb-2" src="images/implantable.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>Implantable Medical Device</h4>
+<p>Experience in high-reliability implantable-coil manufacturing.</p>
+<p><a href="Implantable Medical Device.">more →</a></p>
+</div>
+</div>
+<!-- 2: High-End Medical Equipment -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="High-End Medical Equipment" class="img-fluid mb-2" src="images/medical.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>High-End Medical Equipment</h4>
+<p>Trusted core supplier for the world's leading medical device manufacturers.</p>
+<p><a href="#">more →</a></p>
+</div>
+</div>
+<!-- 3: Electric Vehicle -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="Electric Vehicle" class="img-fluid mb-2" src="images/ev.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>Electric Vehicle</h4>
+<p>Automotive-grade components with long experience in EV systems.</p>
+<p><a href="#">more →</a></p>
+</div>
+</div>
+<!-- 4: Aerospace -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="Aerospace" class="img-fluid mb-2" src="images/aerospace.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>Aerospace</h4>
+<p>Meeting stringent reliability and stability requirements for aerospace systems.</p>
+<p><a href="#">more →</a></p>
+</div>
+</div>
+<!-- 5: Industrial Application -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="Industrial Application" class="img-fluid mb-2" src="images/industrial.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>Industrial Application</h4>
+<p>R&amp;D and long-term partnerships with Fortune 500 corporations.</p>
+<p><a href="#">more →</a></p>
+</div>
+</div>
+<!-- 6: Telecommunication Application -->
+<div class="col-md-6 col-lg-4 mb-3">
+<div class="about-box" style="background:#fff;padding:1.1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+<img alt="Telecommunication Application" class="img-fluid mb-2" src="images/telecom.jpg" style="height:150px;object-fit:cover;border-radius:6px;width:100%;"/>
+<h4>Telecommunication Application</h4>
+<p>Supplying stable telco components for critical communication systems.</p>
+<p><a href="#">more →</a></p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (keeps shared site-footer) -->
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-4 footer-logo" style="text-align:left;">
+<a href="index.html"><img alt="Datatronic Logo" src="images/logo.png"/></a>
+</div>
+<div class="col-md-4 footer-links" style="text-align:left;">
+<ul class="list-unstyled mb-0">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="catalogue.html">Catalogue</a></li>
+<li><a href="awards.html">Awards</a></li>
+<li><a href="page-template.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-md-4 footer-contact" style="text-align:left;">
+<strong>Contact Us</strong>
+<p style="margin:.5rem 0 0;line-height:1.4;">
+                        TEL :（852）25648477<br/>
+                        TEL :（852）61852303<br/>
+                        WeChat: datatron<br/><br/>
+<strong>Address:</strong><br/>
+                        19/F, North Point Industrial Building, 499 King's Road, North Point, Hong Kong<br/><br/>
+<strong>Email：</strong><br/>
+<a href="mailto:datatron@datatronic.com.hk">datatron@datatronic.com.hk</a>
+</p>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12 text-center small" style="opacity:0.9;margin-top:1rem;">
+                    Copyright 2025 © Datatronic Limited
+                </div>
+</div>
+</div>
+</footer>
+<a class="back-to-top button icon invert plain fixed bottom z-1 is-outline round" href="#top" id="top-link" style="display:none;"><i class="fas fa-angle-up"></i></a>
+<script>
+        // i18n init (copy from index)
+        i18next.init({
+            lng: 'en',
+            resources: {
+                en: { translation: { home: "Home", about_us: "About Us", products: "Products", applications: "Applications", contact_us: "Contact Us", language: "EN", awards: "Awards", catalogue: "Catalogue" } },
+                ja: { translation: { home: "ホーム", about_us: "会社概要", products: "製品情報", applications: "用途", contact_us: "お問い合わせ", language: "JP" } },
+                cn: { translation: { home: "首页", about_us: "关于我们", products: "产品", applications: "应用", contact_us: "联系我们", language: "CN" } }
+            }
+        }, (err,t) => { if(!err) document.querySelectorAll('[data-i18n]').forEach(el=> el.textContent = i18next.t(el.getAttribute('data-i18n'))); });
+    </script>
+<script src="unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+<script src="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    const ws = new WebSocket(`ws://${location.host}`);
+    ws.onmessage = () => location.reload();
+    ws.onerror = () => console.log('WebSocket connection error');
+  </script></body>
+</html>

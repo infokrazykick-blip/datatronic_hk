@@ -1,0 +1,12 @@
+url
+https://datatronic.com.hk/
+https://datatronic.com.hk/en/
+https://datatronic.com.hk/en/%e7%94%a2%e5%93%81%e4%b8%ad%e5%bf%83/
+https://datatronic.com.hk/en/catalogue/
+https://datatronic.com.hk/en/%e6%87%89%e7%94%a8%e9%a0%98%e5%9f%9f/
+https://datatronic.com.hk/en/%e9%97%9c%e6%96%bc%e6%88%91%e5%80%91/
+https://datatronic.com.hk/en/%e8%81%af%e7%b9%ab%e6%88%91%e5%80%91-2/
+https://datatronic.com.hk/en/%e7%8d%8e%e9%a0%85/
+
+# NOTE: This is an initial high-priority subset for migration planning.
+# Run the provided Python script in migrate/fetch_sitemap_and_assets.py locally to produce the full URL list and download assets.

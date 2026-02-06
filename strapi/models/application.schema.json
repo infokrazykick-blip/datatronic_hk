@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {"singularName":"application","pluralName":"applications","displayName":"Application"},
+  "options": {"draftAndPublish": true},
+  "attributes": {
+    "title": {"type":"string","required":true},
+    "slug": {"type":"uid","targetField":"title","required":true},
+    "body": {"type":"richtext"},
+    "images": {"type":"media","multiple":true},
+    "featured": {"type":"boolean"},
+    "seo_title": {"type":"string"},
+    "seo_description": {"type":"text"},
+    "publishedAt": {"type":"datetime"}
+  }
+}

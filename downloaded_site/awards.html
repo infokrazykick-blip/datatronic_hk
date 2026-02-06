@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Datatronic - Leading manufacturer of custom magnetic components for medical, aerospace, and industrial applications" name="description"/>
+<meta content="magnetic components, custom magnetics, medical equipment, aerospace components, electric vehicles" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<title>Datatronic - Home</title>
+<meta id="top"/> <!-- Target for back-to-top button -->
+<!-- Bootstrap 5 -->
+<link href="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome 5 for richer icon support (including fab for WeChat) -->
+<link href="cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+<link href="fonts.googleapis.com/css2" rel="stylesheet"/>
+<!-- Flickity CSS for Honors/Awards Carousel -->
+<link href="unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet"/>
+<!-- i18next -->
+<script src="unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+<script src="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<!-- Flickity JS -->
+<script src="unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- 結構化數據 -->
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Datatronic Ltd.",
+            "url": "https://datatronic.com.hk",
+            "logo": "https://placehold.co/100x50/4A4A4A/FFFFFF?text=Logo", 
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+85225648477",
+                "contactType": "Customer Service",
+                "areaServed": "Global",
+                "availableLanguage": ["English", "Chinese", "Japanese"]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "19/F, North Point Industrial Building, 499 King's Road",
+                "addressLocality": "North Point",
+                "addressRegion": "Hong Kong",
+                "postalCode": "",
+                "addressCountry": "HK"
+            }
+        }
+    </script>
+<!-- CSS 樣式 -->
+<link href="css/common.css" rel="stylesheet"/>
+<style>
+        :root { --accent-color: #4A4A4A; }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #E0E0E0; 
+            color: #333130; 
+            font-size: 18px;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        
+        /* Navbar and dropdown styles are centralized in css/common.css */
+        /* See css/common.css for navbar, nav-links, dropdown and mobile rules */
+        
+        /* Make all headings bold */
+        h1,h2,h3,h4,h5,h6 { font-weight: 700; }
+        /* Dropdown styles are centralized in css/common.css */
+        /* Navbar styles moved to css/common.css */
+        /* See css/common.css for unified navbar rules */
+
+        /* Carousel/Section Styles */
+        .carousel { position: relative; max-width: 100%; height: 550px; margin-top: 0; }
+        .carousel-item { position: relative; }
+        .carousel-item img { object-fit: cover; object-position: center; height: 550px; width: 100%; }
+        /* Ensure bottom area visible for banner4 & banner5 */
+        .carousel-item:nth-child(4) img,
+        .carousel-item:nth-child(5) img { object-position: center bottom; }
+        /* Carousel overlay: removed darkening to make images show without transparent gray */
+        .carousel-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: transparent; pointer-events: none; z-index: 1; }
+        .carousel-caption { z-index: 2; left: 6%; bottom: 28%; max-width: 50%; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+        .carousel-caption h1 { font-size: 2.4rem; font-weight: 700; color: #ffffff; margin-bottom: 0.3rem; }
+        .carousel-caption p { color: rgba(255,255,255,0.9); margin: 0 0 1rem; }
+        /* Controls styling */
+        .carousel-control-prev, .carousel-control-next { width: 56px; height: 56px; border-radius: 50%; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; top: 50%; transform: translateY(-50%); }
+        .carousel-control-prev-icon, .carousel-control-next-icon { background-size: 32px 32px; }
+        .carousel-indicators { bottom: 20px; }
+        .carousel-indicators [data-bs-target] { width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.45); border: none; }
+        .carousel-indicators .active { background-color: #d81a29; box-shadow: 0 4px 12px rgba(216,26,41,0.25); }
+        @media (max-width: 768px) {
+            .carousel-caption { bottom: 18%; max-width: 80%; left: 4%; }
+            .carousel-caption h1{ font-size: 1.6rem; }
+            body { font-size: 16px; }
+        }
+        .container-fluid { max-width: 1200px; margin: 2em auto; padding: 0 1em; } 
+        
+        .section { 
+            margin-bottom: 3em; 
+            opacity: 1; 
+            padding: 3rem 1rem;
+        }
+        .section-title {
+            text-align: center; font-weight: 700; font-size: 1.8rem; margin-bottom: 1rem; color: #333130;
+        }
+        .section-desc {
+            text-align: center; max-width: 900px; margin: 0 auto 2.5rem; color: #555; font-size: 1.05rem;
+        }
+        
+        /* Business Sector Styles */
+        .business-sector-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            height: 100%;
+        }
+        /* Ensure sector images have a consistent aspect ratio (approx 377x215 -> 57% height) */
+        .img-inner.image-cover { position: relative; width: 100%; padding-top: 57%; overflow: hidden; }
+        .img-inner.image-cover img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+        .sector-button-full {
+            width: 25%;
+            min-width: 80px; 
+            margin-top: 0.5rem; 
+        }
+        
+        /* --- Our Products Fix --- */
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 1em; 
+        }
+        .product-item { 
+            text-align: center; 
+            height: 100%; 
+        }
+        .product-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; 
+            background: white; /* Explicitly set white background */
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-box a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .product-box:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .box-image { position: relative; }
+        .box-image.image-cover, .box-image .image-cover { padding-top: 100%; overflow: hidden; }
+        .box-image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+        .product-box:hover .box-image img { transform: scale(1.03); }
+        .box-text-bottom {
+            position: relative; 
+            bottom: auto;
+            left: auto;
+            width: 100%;
+            margin-top: auto; 
+        }
+        .box-text {
+            background-color: rgb(216, 26, 41); 
+            color: white;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+        .box-text h4 { margin: 0; font-size: 1rem; font-weight: 600; }
+        /* --- End Our Products Fix --- */
+        
+        /* About Box - Left Image, Right Text (Final Fix) */
+        .about-box-wrapper { 
+            max-width: 100%; 
+            margin: 0 auto;
+            display: flex; 
+            justify-content: center;
+        }
+        .about-box {
+            background: transparent;
+            color: #333;
+            padding: 0; /* content box handles padding */
+            box-shadow: none;
+            display: flex;
+            gap: 0;
+            width: 100%;
+            border-radius: 0; /* straight corners */
+            align-items: stretch;
+            min-height: 320px; /* increase overall height so content doesn't look short */
+            overflow: hidden;
+        }
+        /* Fixed left image column */
+        .about-box .box-image { flex: 0 0 320px; width: 320px; }
+        .about-box .box-image .image-cover { padding-top: 0; height: 100%; overflow: hidden; border-radius: 0; }
+        .about-box .box-image .image-cover img { width: 100%; height: 100%; object-fit: cover; object-position: center left; display: block; }
+        /* Right content: white card with left accent bar like the official site */
+        .about-content {
+            background: var(--accent-color);
+            padding: 2.0em 2.5em;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: none;
+            color: #fff;
+        }
+        .about-content a { color: #fff; }
+        .about-content p { color: #fff; }
+        .about-content .about-locations p { color: #fff; font-weight: normal; }
+        .about-content h2 { margin-top: 0; }
+        .about-content p { margin-bottom: 0.75rem; }
+        .about-locations { margin-top: 0.75rem; }
+        .about-locations p { margin: 0.2rem 0; font-weight: 600; }
+        /* Make the About image fill the left side and limit overall height */
+        .about-box { align-items: stretch; min-height: 260px; }
+        .about-box .box-image { flex: 0 0 40%; width: 40%; }
+        .about-box .box-image .image-cover { padding-top: 0; height: 100%; overflow: hidden; border-radius: 8px 0 0 8px; }
+        .about-box .box-image .image-cover img { width: 100%; height: 100%; object-fit: cover; object-position: center left; display: block; }
+        .about-content { flex: 1; }
+        .about-content h2 { margin-top: 0; color: white; font-weight: 700; }
+        
+        /* Honors/Awards Carousel (Flickity) */
+        .awards-section-container {
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: transparent; /* match page background */
+            padding: 0; /* remove inner padding to match unified background */
+            border-radius: 0;
+            box-shadow: none;
+            transform: translateY(-80px); /* move up 80px (previous 50px + extra 30px) */
+        }
+        .flickity-viewport { padding: 20px 0 !important; }
+        .gallery-col { width: 25%; padding: 10px; } /* large-columns-4 */
+        .gallery-col .col-inner {
+            background: transparent;
+            padding: 12px;
+            border-radius: 0;
+            box-shadow: none;
+            transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px; /* keep same min-height */
+        }
+        .gallery-col .col-inner:hover { transform: translateY(-5px); }
+        .gallery-col .col-inner { background: transparent; border-radius: 0; padding: 12px; box-shadow: none; }
+        /* === 核心輪播圖圖片 CSS 區塊 (固定高度 200px, 白色背景) === */
+        .gallery-col .box-image.image-cover, .gallery-col .box-image .image-cover {
+            width: 100%;
+            height: 200px; /* fixed height per example */
+            padding-top: 0;
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+        }
+        .gallery-col .box-image.image-cover img, .gallery-col .box-image .image-cover img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: contain; /* show full image on white background */
+            display: block; border-radius: 6px;
+        }
+        /* === 核心輪播圖圖片 CSS 區塊結束 === */
+        /* ensure the image wrapper stretches to the fixed height and hides overflow */
+        .gallery-col .box-image { display: flex; justify-content: center; align-items: stretch; margin-bottom: 10px; }
+        /* duplicate fixed-height rules removed to avoid conflict; image-cover is defined above (200px) */
+        
+        .gallery-col .box-image { background: transparent; border-radius: 0; padding: 0; }
+        .gallery-col .box-text { text-align: center; } 
+        .gallery-col .box-text p { margin: 0; font-size: 0.9em; font-weight: 600; color: #333130; }
+        /* Lightbox modal for Awards */
+        .lightbox-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.75); z-index: 1200; }
+        .lightbox-modal.open { display: flex; }
+        .lightbox-inner { max-width: 90%; max-height: 90%; background: white; border-radius: 8px; padding: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.6); display:flex; flex-direction: column; gap: 8px; }
+        .lightbox-inner img { max-width: 100%; max-height: 72vh; object-fit: contain; border-radius: 6px; }
+        .lightbox-caption { font-size: 0.95rem; color: #222; }
+        .lightbox-close { position: absolute; right: 18px; top: 18px; width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.5); color: white; display:flex; align-items:center; justify-content:center; cursor:pointer; }
+
+        .is-divider.divider { height: 4px; background-color: #d81a29; max-width: 40px; margin: 0.5em auto; }
+        
+        /* Back-to-Top */
+        #top-link {
+            position: fixed; bottom: 20px; right: 20px; z-index: 990; display: none; width: 45px; height: 45px;
+            line-height: 45px; text-align: center; border-radius: 50%; background-color: #f0f0f0; border: 1px solid #ddd;
+            color: #666; box-shadow: 0 2px 5px rgba(0,0,0,0.08); transition: opacity 0.3s, visibility 0.3s, background-color 0.18s;
+            text-decoration: none; font-size: 1.2rem;
+        }
+        #top-link:hover { background-color: #e0e0e0; color: #333; }
+        
+        footer { background-color: #333; color: white; text-align: center; padding: 1em; }
+        
+        /* Responsive Media Query Integration */
+        @media (max-width: 992px) {
+            .about-box .box-image { width: 50%; }
+        }
+        @media (max-width: 768px) {
+            .product-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-box { flex-direction: column; min-height: auto; }
+            .about-box .box-image { width: 100%; flex: 0 0 auto; }
+            .about-box .box-image .image-cover { padding-top: 75%; height: auto; border-radius: 8px 8px 0 0; }
+            .about-content { border-left: none; padding: 1.25em; }
+            /* gallery columns removed for small breakpoint */
+        }
+        @media (max-width: 576px) {
+            .product-grid { grid-template-columns: 1fr; }
+            /* gallery columns removed for extra-small breakpoint */
+            .sector-button-full { width: 100%; }
+        }
+
+        /* Sector More button styles */
+        .sector-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            padding: 0.2rem 0.35rem;
+            border-radius: 8px;
+            border: 2px solid #d81a29;
+            background: #ffffff;
+            color: #d81a29;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.18s ease, color 0.18s ease, transform 0.08s ease;
+        }
+        .sector-button i { color: inherit; }
+        .sector-button:hover, .sector-button:focus {
+            background: #d81a29;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            /* Contact sidebar styles moved to css/common.css */
+            /* See css/common.css for unified contact sidebar and navbar rules */
+    </style>
+</head>
+<body class="solid-nav" id="top"> <!-- Add id="top" for back-to-top functionality -->
+<!-- 導航欄 -->
+<nav id="navbar">
+<div class="logo">
+<!-- 圖片使用佔位符，使用新的 50px 高度 -->
+<img alt="Datatronic Logo" src="images/logo.png"/>
+</div>
+<div class="nav-links" id="navLinks">
+<a class="active" data-i18n="home" href="index.html">Home</a>
+<a data-i18n="about_us" href="about.html">About Us</a>
+<a data-i18n="products" href="products.html">Products</a>
+<a data-i18n="catalogue" href="catalogue.html">Catalogue</a>
+<a data-i18n="applications" href="applications.html">Applications</a>
+<a data-i18n="awards" href="awards.html">Awards</a>
+<a data-i18n="contact_us" href="contact.html">Contact Us</a>
+<div class="dropdown">
+<button class="dropdown-btn" data-i18n="language">EN</button>
+<div class="dropdown-content">
+<a href="#" onclick="changeLanguage('en')">EN</a>
+<a href="#" onclick="changeLanguage('ja')">JP</a>
+<a href="#" onclick="changeLanguage('cn')">CN</a>
+</div>
+</div>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+<!-- 側邊聯絡欄（左側, 可收起, 電話 & WeChat） -->
+<div class="collapsed" id="contactSidebar">
+<div class="mystickyelement-lists-wrap">
+<ul class="mystickyelements-lists mysticky">
+<!-- Minimize Button -->
+<li aria-label="Toggle contact sidebar" class="mystickyelements-minimize" onclick="toggleSidebar()" role="button" tabindex="0">
+                    ←
+                </li>
+<!-- 聯絡電話 (tap to reveal) -->
+<li class="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on" id="mystickyelements-social-phone" role="button" tabindex="0" title="Call us">
+<span aria-expanded="false" aria-haspopup="true" class="mystickyelements-social-icon social-phone social-custom" data-flyout="phone">
+<i class="fa fa-phone"></i>
+</span>
+<!-- Flyout (phone number) -->
+<div aria-hidden="true" class="mystickyelements-flyout phone-flyout">
+<div class="flyout-inner">
+<a href="tel:(852) 61852303" style="color:inherit; text-decoration:none; font-weight:700;" title="(852) 61852303">(852) 61852303</a>
+</div>
+</div>
+</li>
+<!-- WeChat -->
+<li class="mystickyelements-social-icon-li mystickyelements-social-wechat element-desktop-on element-mobile-on" id="mystickyelements-social-wechat" role="button" tabindex="0" title="WeChat ID: datatron">
+<span class="mystickyelements-social-icon social-wechat social-custom" data-flyout="wechat">
+<i class="fab fa-weixin"></i>
+</span>
+<!-- Flyout (QR / details) -->
+<div aria-hidden="true" class="mystickyelements-flyout">
+<div class="flyout-inner">
+<img alt="WeChat QR code (Datatronic)" loading="lazy" src="images/logo.png">
+<p>WeChat: datatron</p>
+</img></div>
+</div>
+</li>
+</ul>
+</div>
+</div></nav>
+<!-- 插入自 https://datatronic.com.hk/en/ 獎項頁之中間內容（4個一行 + 品牌名） -->
+<main aria-label="Main content" role="main">
+<section class="section" style="max-width:1200px;margin:0 auto;padding-top:80px;">
+<div class="container text-center">
+<h1 class="section-title">Honors and Awards</h1>
+<p class="section-desc">Over the past 50 years, Datatronic has nurtured strong relationships with Fortune 500 companies, solidifying our position as a trusted partner. We take pride in delivering products of exceptional reliability, ensuring that our clients can rely on us for their critical needs. Our unwavering commitment to quality and customer satisfaction has been the foundation of our enduring partnerships with our clients.</p>
+<div class="is-divider divider" style="margin:1.25em auto 0.5em;max-width:40px;height:4px;background-color:#d81a29;"></div>
+</div>
+<div class="container py-4">
+<!-- Industrial Application - 4 per row -->
+<div class="mb-5">
+<h3 class="h5 mb-3">Industrial Application</h3>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; align-items: start;">
+<div style="text-align: center;">
+<a href="images/awards/2021022561215-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Vicor" class="img-fluid" loading="lazy" src="images/awards/2021022561215-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Vicor</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022552247-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Lutron" class="img-fluid" loading="lazy" src="images/awards/2021022552247-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Lutron</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022580144-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Lutron" class="img-fluid" loading="lazy" src="images/awards/2021022580144-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Lutron</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022546848-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Lutron" class="img-fluid" loading="lazy" src="images/awards/2021022546848-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Lutron</p>
+</div>
+</div>
+</div>
+<!-- Medical Device - 4 per row -->
+<div class="mb-5">
+<h3 class="h5 mb-3">Medical Device</h3>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; align-items: start;">
+<div style="text-align: center;">
+<a href="images/awards/2021022592089-2.jpg" rel="noopener noreferrer" target="_blank"><img alt="Micro Systems" class="img-fluid" loading="lazy" src="images/awards/2021022592089.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Micro Systems</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022594548.jpg" rel="noopener noreferrer" target="_blank"><img alt="Micro Systems" class="img-fluid" loading="lazy" src="images/awards/2021022594548.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Micro Systems</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022538558.jpg" rel="noopener noreferrer" target="_blank"><img alt="Micro Systems" class="img-fluid" loading="lazy" src="images/awards/2021022538558.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Micro Systems</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022599011.jpg" rel="noopener noreferrer" target="_blank"><img alt="Medtronic" class="img-fluid" loading="lazy" src="images/awards/2021022599011.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Medtronic</p>
+</div>
+</div>
+</div>
+<!-- Aerospace - 4 per row -->
+<div class="mb-5">
+<h3 class="h5 mb-3">Aerospace</h3>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; align-items: start;">
+<div style="text-align: center;">
+<a href="images/awards/2021022517234-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Astronics" class="img-fluid" loading="lazy" src="images/awards/2021022517234-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Astronics</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022572874-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Xicom" class="img-fluid" loading="lazy" src="images/awards/2021022572874-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Xicom</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022531393-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Xicom" class="img-fluid" loading="lazy" src="images/awards/2021022531393-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Xicom</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022531758-1.jpg" rel="noopener noreferrer" target="_blank"><img alt="Astronics" class="img-fluid" loading="lazy" src="images/awards/2021022531758-1.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Astronics</p>
+</div>
+</div>
+</div>
+<!-- Telecommunication Application - 4 per row -->
+<div class="mb-5">
+<h3 class="h5 mb-3">Telecommunication Application</h3>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; align-items: start;">
+<div style="text-align: center;">
+<a href="images/awards/2021022527542-2.jpg" rel="noopener noreferrer" target="_blank"><img alt="Dataforth" class="img-fluid" loading="lazy" src="images/awards/2021022527542-2.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Dataforth</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021022547037-2.jpg" rel="noopener noreferrer" target="_blank"><img alt="Dataforth" class="img-fluid" loading="lazy" src="images/awards/2021022547037-2.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Dataforth</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021020160075-2.jpg" rel="noopener noreferrer" target="_blank"><img alt="Xerox" class="img-fluid" loading="lazy" src="images/awards/2021020160075-2.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">Xerox</p>
+</div>
+<div style="text-align: center;">
+<a href="images/awards/2021020118725-2.jpg" rel="noopener noreferrer" target="_blank"><img alt="ICL" class="img-fluid" loading="lazy" src="images/awards/2021020118725-2.jpg" style="max-height:200px;object-fit:contain;border-radius:6px;"/></a>
+<p class="mt-2" style="font-size:14px;font-weight:700;color:#333;">ICL</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-4 footer-logo" style="text-align:left;">
+<a href="index.html"><img alt="Datatronic Logo" src="images/logo.png"/></a>
+</div>
+<div class="col-md-4 footer-links" style="text-align:left;">
+<ul class="list-unstyled mb-0" style="padding-left:0;margin:0;">
+<li><a href="index.html" style="color:inherit;text-decoration:none;">Home</a></li>
+<li><a href="products.html" style="color:inherit;text-decoration:none;">Products</a></li>
+<li><a href="about.html" style="color:inherit;text-decoration:none;">About Us</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Catalogue</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Applications</a></li>
+<li><a href='awards.html""' style="color:inherit;text-decoration:none;">Awards</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-md-4 footer-contact" style="text-align:left;">
+<strong>Contact Us</strong>
+<p style="margin:.5rem 0 0;line-height:1.4;">
+                        TEL :（852）25648477<br/>
+                        TEL :（852）61852303<br/>
+                        WeChat: datatron<br/><br/>
+<strong>Address:</strong><br/>
+                        19/F, North Point Industrial Building, 499 King's Road, North Point, Hong Kong<br/><br/>
+<strong>Email：</strong><br/>
+<a href="mailto:datatron@datatronic.com.hk" style="color:inherit;text-decoration:underline;">datatron@datatronic.com.hk</a>
+</p>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12 text-center small" style="opacity:0.9;margin-top:1rem;">
+                    Copyright 2025 © Datatronic Limited
+                </div>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<a class="back-to-top button icon invert plain fixed bottom z-1 is-outline round" href="#top" id="top-link" style="display: none;">
+<i class="fas fa-angle-up"></i>
+</a>
+<script>
+        // i18n 翻譯資源 (完整填寫)
+        i18next.init({
+            lng: 'en',
+            resources: {
+                en: { translation: {
+                    home: "Home", about_us: "About Us", products: "Products", applications: "Applications", contact_us: "Contact Us", language: "EN",
+                    business_sectors: "Main Business Sectors", sectors_desc: "We prioritize customer needs with our services quality and manufacturing facilities worldwide.",
+                    medical: "High-End Medical Equipment", medical_desc: "Trusted core supplier for the world's leading medical device manufacturers.",
+                    aerospace: "Aerospace & Defense", aerospace_desc: "Meets the most stringent reliability and stability requirements.",
+                    telecom: "Telecommunications", telecom_desc: "Responsible for the development of highly stable telecommunication systems for researchers in Silicon Valley, Shanghai and India.",
+                    implantable: "Implantable Medical Device", implantable_desc: "The health and medical product experience market has been in existence for over 30 years. The quality, experience, and efficacy have been continuously tested and proven over the long term, making it the brand of Sunshine Medical Company.",
+                    ev: "Electric Vehicle", ev_desc: "One of the earliest QS9000 certified automotive component suppliers with over 20 years of experience in automotive applications.",
+                    industrial: "High-tech Industrial Applications", industrial_desc: "Supply R&D products to major corporations, nurturing long-standing partnerships with Fortune 500 companies for over 30 years, driving the growth of advanced industries.",
+                    inductor: "Power Inductors", switching: "Switching Power Magnetic Components", transformer: "Power Transformers (Customizable)",
+                    lighting: "Lighting Magnetic Components (Customizable)", comm: "Communication Magnetic Components", choke: "Transformers and Choke Coils (Customizable)",
+                    current: "Current Sense Transformers (Customizable)", wideband: "Wideband Transformers",
+                    medical_coils: "Medical Application Coils (Customizable)", 
+                    products_desc: "Dedicated Service and Customization. Global Facilities to Serve Our Clients.",
+                    about_datatronic: "About Datatronic", 
+                    about_desc1: "Established in 1971, Datatronic is an award-winning, internationally recognized manufacturer of components for Medical, Aerospace, Telecommunication Industries, as well as data processors and other high-tech industrial applications.",
+                    about_desc2: "We prioritize customer needs with our services quality and manufacturing facilities worldwide.",
+                    awards: "Awards", catalogue: "Catalogue", more: "Learn More →",
+                }},
+                ja: { translation: {
+                    home: "ホーム", about_us: "会社概要", products: "製品情報", applications: "用途", contact_us: "お問い合わせ", language: "JP",
+                    business_sectors: "主要事業分野", sectors_desc: "グローバルな製造施設と厳格な品質システムにより、世界中のリーディングカンパニーにカスタム磁気ソリューションを提供しています。",
+                    medical: "ハイエンド医療機器", medical_desc: "世界の主要な医療機器メーカーの信頼できるコアサプライヤー。",
+                    aerospace: "航空宇宙・防衛", aerospace_desc: "最も厳しい信頼性と安定性の要件を満たしています。",
+                    telecom: "通信", telecom_desc: "シリコンバレー、上海、インドの研究者向けに、高安定な通信システムの開発を担当しています。",
+                    implantable: "植込み型医療機器", implantable_desc: "保健・医療製品の市場は30年以上の歴史があります。品質、経験、有効性が長期にわたり継続的に試験・証明されており、サンシャイン医療会社のブランドとなっています。",
+                    ev: "電気自動車", ev_desc: "自動車アプリケーションにおいて20年以上の経験を持つ、最も初期のQS9000認定自動車部品サプライヤーの1つです。",
+                    industrial: "ハイテク産業用アプリケーション", industrial_desc: "主要企業の研究開発製品を供給し、フォーチュン500企業との長年のパートナーシップを30年以上にわたり育成し、先進産業の成長を牽引しています。",
+                    inductor: "パワーインダクタ", switching: "スイッチング電源磁気部品", transformer: "パワートランス (カスタマイズ可能)",
+                    lighting: "照明用磁気部品 (カスタマイズ可能)", comm: "通信用磁気部品", choke: "トランスおよびチョークコイル (カスタマイズ可能)",
+                    current: "電流検出トランス (カスタマイズ可能)", wideband: "広帯域トランス",
+                    medical_coils: "医療用コイル (カスタマイズ可能)",
+                    products_desc: "専任のサービスとカスタマイズ。クライアントにサービスを提供するためのグローバル施設。",
+                    about_datatronic: "Datatronicについて", 
+                    about_desc1: "1971年に設立されたDatatronicは、医療、航空宇宙、通信産業、データプロセッサ、その他のハイテク産業用アプリケーション向けのコンポーネントを製造する、受賞歴のある国際的に認められたメーカーです。",
+                    about_desc2: "私たちは、サービス品質と世界中の製造施設を通じて、顧客のニーズを優先しています。",
+                    awards: "栄誉と受賞", catalogue: "カタログ", more: "さらに詳しく →",
+                }},
+                cn: { translation: {
+                    home: "首页", about_us: "关于我们", products: "产品", applications: "应用", contact_us: "联系我们", language: "CN",
+                    business_sectors: "主要业务板块", sectors_desc: "凭借全球制造设施和严格的质量体系，我们为全球领先的公司提供定制磁性解决方案。",
+                    medical: "高端医疗设备", medical_desc: "世界领先医疗设备制造商的信赖核心供应商。",
+                    aerospace: "航空航天与国防", aerospace_desc: "满足最严苛的可靠性和稳定性要求。",
+                    telecom: "电信应用", telecom_desc: "负责为硅谷、上海和印度的研究人员开发高度稳定的电信系统。",
+                    implantable: "植入式医疗设备", implantable_desc: "保健和医疗产品经验市场已存在30多年。质量、经验和功效经过长期持续的测试和证明，使其成为Sunshine Medical Company的品牌。",
+                    ev: "电动汽车", ev_desc: "最早获得QS9000认证的汽车零部件供应商之一，在汽车应用方面拥有20多年的经验。",
+                    industrial: "高科技工业应用", industrial_desc: "为主要公司供应研发产品，与财富500强企业培育了30多年的长期合作关系，推动了先进产业的增长。",
+                    inductor: "功率电感", switching: "开关电源磁性元件", transformer: "电源变压器（可定制）",
+                    lighting: "照明磁性元件（可定制）", comm: "通信磁性元件", choke: "变压器和扼流圈（可定制）",
+                    current: "电流感应变压器（可定制）", wideband: "宽带变压器",
+                    medical_coils: "医疗应用线圈（可定制）",
+                    products_desc: "专用服务和定制。全球设施服务我们的客户。",
+                    about_datatronic: "关于 Datatronic", 
+                    about_desc1: "Datatronic 成立于 1971 年，是一家屡獲殊榮、國際公認的製造商，為醫療、航空航天、電信行業以及數據處理器和其他高科技工業應用提供元件。",
+                    about_desc2: "我們通過優質的服務和全球製造設施，優先考慮客戶的需求。",
+                    awards: "荣誉与奖项", catalogue: "产品目录", more: "了解更多 →",
+                }}
+
+                ja: { translation: {
+                    home: "ホーム", about_us: "会社概要", products: "製品情報", applications: "用途", contact_us: "お問い合わせ", language: "JP",
+                    business_sectors: "主要事業分野", sectors_desc: "グローバルな製造施設と厳格な品質システムにより、世界中のリーディングカンパニーにカスタム磁気ソリューションを提供しています。",
+                    medical: "ハイエンド医療機器", medical_desc: "世界の主要な医療機器メーカーの信頼できるコアサプライヤー。",
+                    aerospace: "航空宇宙・防衛", aerospace_desc: "最も厳しい信頼性と安定性の要件を満たしています。",
+                    telecom: "通信", telecom_desc: "シリコンバレー、上海、インドの研究者向けに、高安定な通信システムの開発を担当しています。",
+                    implantable: "植込み型医療機器", implantable_desc: "保健・医療製品の市場は30年以上の歴史があります。品質、経験、有効性が長期にわたり継続的に試験・証明されており、サンシャイン医療会社のブランドとなっています。",
+                    ev: "電気自動車", ev_desc: "自動車アプリケーションにおいて20年以上の経験を持つ、最も初期のQS9000認定自動車部品サプライヤーの1つです。",
+                    industrial: "ハイテク産業用アプリケーション", industrial_desc: "主要企業の研究開発製品を供給し、フォーチュン500企業との長年のパートナーシップを30年以上にわたり育成し、先進産業の成長を牽引しています。",
+                    inductor: "パワーインダクタ", switching: "スイッチング電源磁気部品", transformer: "パワートランス (カスタマイズ可能)",
+                    lighting: "照明用磁気部品 (カスタマイズ可能)", comm: "通信用磁気部品", choke: "トランスおよびチョークコイル (カスタマイズ可能)",
+                    current: "電流検出トランス (カスタマイズ可能)", wideband: "広帯域トランス",
+                    medical_coils: "医療用コイル (カスタマイズ可能)",
+                    products_desc: "専任のサービスとカスタマイズ。クライアントにサービスを提供するためのグローバル施設。",
+                    about_datatronic: "Datatronicについて", 
+                    about_desc1: "1971年に設立されたDatatronicは、医療、航空宇宙、通信産業、データプロセッサ、その他のハイテク産業用アプリケーション向けのコンポーネントを製造する、受賞歴のある国際的に認められたメーカーです。",
+                    about_desc2: "私たちは、サービス品質と世界中の製造施設を通じて、顧客のニーズを優先しています。",
+                    awards: "栄誉と受賞", more: "さらに詳しく →",
+                }},
+                cn: { translation: {
+                    home: "首页", about_us: "关于我们", products: "产品", applications: "应用", contact_us: "联系我们", language: "CN",
+                    business_sectors: "主要业务板块", sectors_desc: "凭借全球制造设施和严格的质量体系，我们为全球领先的公司提供定制磁性解决方案。",
+                    medical: "高端医疗设备", medical_desc: "世界领先医疗设备制造商的信赖核心供应商。",
+                    aerospace: "航空航天与国防", aerospace_desc: "满足最严苛的可靠性和稳定性要求。",
+                    telecom: "电信应用", telecom_desc: "负责为硅谷、上海和印度的研究人员开发高度稳定的电信系统。",
+                    implantable: "植入式医疗设备", implantable_desc: "保健和医疗产品经验市场已存在30多年。质量、经验和功效经过长期持续的测试和证明，使其成为Sunshine Medical Company的品牌。",
+                    ev: "电动汽车", ev_desc: "最早获得QS9000认证的汽车零部件供应商之一，在汽车应用方面拥有20多年的经验。",
+                    industrial: "高科技工业应用", industrial_desc: "为主要公司供应研发产品，与财富500强企业培育了30多年的长期合作伙伴关系，推动了先进产业的增长。",
+                    inductor: "功率电感", switching: "开关电源磁性元件", transformer: "电源变压器（可定制）",
+                    lighting: "照明磁性元件（可定制）", comm: "通信磁性元件", choke: "变压器和扼流圈（可定制）",
+                    current: "电流感应变压器（可定制）", wideband: "宽带变压器",
+                    medical_coils: "医疗应用线圈（可定制）",
+                    products_desc: "专用服务和定制。全球设施服务我们的客户。",
+                    about_datatronic: "关于 Datatronic", 
+                    about_desc1: "Datatronic 成立于 1971 年，是一家屡獲殊榮、國際公認的製造商，為醫療、航空航天、電信行業以及數據處理器和其他高科技工業應用提供元件。",
+                    about_desc2: "我們通過優質的服務和全球製造設施，優先考慮客戶的需求。",
+                    awards: "荣誉与奖项", more: "了解更多 →",
+                }}
+            }
+        }, (err, t) => {
+            if (!err) updateContent();
+        });
+
+        // Shared helpers are now provided by js/common.js — page-specific logic kept below where needed.
+        // Manual product description update (kept for index page only)
+        const prodDesc = document.querySelector('.product-section-description');
+        if (prodDesc && typeof i18next !== 'undefined') prodDesc.textContent = i18next.t('products_desc');
+
+    </script>
+<script>
+    const ws = new WebSocket(`ws://${location.host}`);
+    ws.onmessage = () => location.reload();
+    ws.onerror = () => console.log('WebSocket connection error');
+  </script></body>
+</html>

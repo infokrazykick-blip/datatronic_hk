@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power Inductors - Datatronic">
+    <meta name="keywords" content="power inductors, magnetic components">
+    <meta name="robots" content="index, follow">
+    <title>Wideband Transformers - Datatronic</title>
+    <meta id="top">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        /* Page-specific base styles - product styles inherited from common.css */
+        :root { --accent-color: #4A4A4A; }
+        header { background: linear-gradient(to right, #4A4A4A, #6A6A6A); color: white; padding: 2em; text-align: center; }
+        .container-fluid { max-width: 1200px; margin: 2em auto; padding: 0 1em; }
+        .section { margin-bottom: 3em; padding: 3rem 1rem; background-color: white; }
+    </style>
+</head>
+<body id="top" class="solid-nav">
+    <nav id="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none;"><img src="images/logo.png" alt="Datatronic Logo"></a></div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" data-i18n="home">Home</a>
+            <a href="about.html" data-i18n="about_us">About Us</a>
+            <a href="products.html" class="active" data-i18n="products">Products</a>
+            <a href="catalogue.html" data-i18n="catalogue">Catalogue</a>
+            <div class="nav-dropdown">
+                <a href="applications.html" class="nav-dropdown-trigger" data-i18n="applications">Applications</a>
+                <div class="nav-dropdown-menu">
+                    <a href="Equipment.html" data-i18n="equipment">High-End Medical Equipment</a>
+                    <a href="Aerospace.html" data-i18n="aerospace">Aerospace & Defense</a>
+                    <a href="Telecommunication.html" data-i18n="telecommunication">Telecommunications</a>
+                    <a href="Implantable.html" data-i18n="implantable">Implantable Medical Device</a>
+                    <a href="Vehicle.html" data-i18n="vehicle">Electric Vehicle</a>
+                    <a href="Industrial.html" data-i18n="industrial">Industrial Application</a>
+                </div>
+            </div>
+            <a href="index.html#awards" data-i18n="awards">Awards</a>
+            <a href="contact.html" data-i18n="contact_us">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" data-i18n="language">EN</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')">EN</a>
+                    <a href="#" onclick="changeLanguage('ja')">JP</a>
+                    <a href="#" onclick="changeLanguage('cn')">CN</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <nav id="contactSidebar" class="collapsed" aria-hidden="false">
+        <div class="mystickyelement-lists-wrap">
+            <ul class="mystickyelements-lists">
+                <li class="mystickyelements-minimize" onclick="toggleSidebar()" role="button" aria-label="Toggle contact sidebar" tabindex="0">
+                    &larr;
+                </li>
+                <li class="mystickyelements-social-icon-li mystickyelements-list-item">
+                    <span class="mystickyelements-social-icon social-phone" data-flyout="phone" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    </span>
+                    <div class="mystickyelements-flyout phone-flyout" aria-hidden="true">
+                        <div class="flyout-inner"><a href="tel:(852) 61852303">(852) 61852303</a><br>Mon-Fri 9:00-18:00</div>
+                    </div>
+                </li>
+                <li class="mystickyelements-social-icon-li mystickyelements-list-item">
+                    <span class="mystickyelements-social-icon social-wechat" data-flyout="wechat" aria-haspopup="true" aria-expanded="false">
+                        <i class="fab fa-weixin" aria-hidden="true"></i>
+                    </span>
+                    <div class="mystickyelements-flyout mystickyelements-wechat-flyout" aria-hidden="true">
+                        <div class="flyout-inner"><img src="images/Datatronic-wechat.jpg" alt="WeChat QR"><br>WeChat: datatron</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" style="background:#ffffff; padding-top: 120px; padding-bottom: 3rem;">
+        <div class="container-fluid">
+            <a href="products.html" class="back-to-products"><i class="fas fa-arrow-left"></i> <span data-i18n="back_to_products">Back to Products</span></a>
+
+            <div class="product-header">
+                <h1 class="product-title" id="productTitle"><a href="products.html#wideband" style="text-decoration: none; color: inherit;">Wideband Transformers</a></h1>
+                <p class="product-description" id="productDescription">Wideband transformers for high-frequency RF and signal applications</p>
+                <span class="pdf-count" id="pdfCount">PDF Files: 0</span>
+            </div>
+
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background-color: #f9f9f9; border-radius: 8px;">
+                <h3 style="font-size: 1.3rem; color: #333130; margin-bottom: 1.5rem;">
+                    <i class="fas fa-list" style="color: rgb(216, 26, 41); margin-right: 0.5rem;"></i>
+                    <span data-i18n="Subcategories">Subcategories</span>
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+                    <a href="wb_hf_wirewound.html" style="padding: 1rem; background: white; border: 1px solid #e0e0e0; border-radius: 4px; text-decoration: none; color: #333130; transition: all 0.3s ease; display: block;">
+                        <h4 style="margin: 0 0 0.5rem; color: #333130; font-weight: 600;">Inductors, High Frequency Wirewound</h4>
+                    </a>
+                    <a href="wb_air_core.html" style="padding: 1rem; background: white; border: 1px solid #e0e0e0; border-radius: 4px; text-decoration: none; color: #333130; transition: all 0.3s ease; display: block;">
+                        <h4 style="margin: 0 0 0.5rem; color: #333130; font-weight: 600;">Inductors, Air Core</h4>
+                    </a>
+                    <a href="wb_rf.html" style="padding: 1rem; background: white; border: 1px solid #e0e0e0; border-radius: 4px; text-decoration: none; color: #333130; transition: all 0.3s ease; display: block;">
+                        <h4 style="margin: 0 0 0.5rem; color: #333130; font-weight: 600;">Transformers, RF, Wideband</h4>
+                    </a>
+                    <a href="balancing_transformer.html" style="padding: 1rem; background: white; border: 1px solid #e0e0e0; border-radius: 4px; text-decoration: none; color: #333130; transition: all 0.3s ease; display: block;">
+                        <h4 style="margin: 0 0 0.5rem; color: #333130; font-weight: 600;">Balancing transformer</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: #333130;">
+                    <i class="fas fa-file-pdf" style="color: rgb(216, 26, 41); margin-right: 0.5rem;"></i>
+                    <span data-i18n="available_documents">Available Documents</span>
+                </h2>
+                <div class="pdf-list" id="pdfList">
+                </div>
+            </div>
+        </div>
+    </section>
+
+                                <footer class="site-footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 footer-logo">
+                    <img src="images/logo.png" alt="Datatronic Logo">
+                    <p>Award-winning manufacturer of custom magnetic components since 1971.</p>
+                </div>
+                <div class="col-md-2 offset-md-1 footer-links">
+                    <strong>Quick Links</strong>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-links">
+                    <strong>Products</strong>
+                    <ul>
+                        <li><a href="medical.html">Medical</a></li>
+                        <li><a href="Aerospace.html">Aerospace</a></li>
+                        <li><a href="Industrial.html">Industrial</a></li>
+                        <li><a href="Vehicle.html">Vehicle</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-contact">
+                    <strong>Contact Us</strong>
+                    <p>19/F, North Point Industrial Building,<br>499 King's Road, North Point, Hong Kong<br><br>
+                    Email: datatron@datatronic.com.hk<br>
+                    Phone: +852-2564-8477</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <hr style="border-top: 1px solid #444;">
+                    <p class="mb-0" style="font-size: 0.8rem; color: #888;">&copy; 2026 Datatronic Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline round" id="top-link" style="display: none;">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <script>
+        const savedLng = window.getSavedLanguage ? window.getSavedLanguage() : (localStorage.getItem('preferredLanguage') || 'en');
+        i18next.init({
+            lng: savedLng, resources: { en: { translation: { home: "Home", about_us: "About Us", products: "Products", applications: "Applications", contact_us: "Contact Us", language: "EN", awards: "Awards", catalogue: "Catalogue", equipment: "High-End Medical Equipment", aerospace: "Aerospace & Defense", telecommunication: "Telecommunications", implantable: "Implantable Medical Device", vehicle: "Electric Vehicle", industrial: "Industrial Application", back_to_products: "Back to Products", available_documents: "Available Documents", download: "Download PDF", subcategories: "Subcategories" } }, ja: { translation: { home: "ホーム", about_us: "会社概要", products: "製品情報", applications: "用途", contact_us: "お問い合わせ", language: "JP", awards: "受賞歴", catalogue: "カタログ", equipment: "高機能医療機器", aerospace: "航空宇宙・防衛", telecommunication: "通信", implantable: "植込み型医療機器", vehicle: "電気自動車", industrial: "産業用アプリケーション", back_to_products: "商品に戻る", available_documents: "利用可能なドキュメント", download: "PDFをダウンロード", subcategories: "サブカテゴリー" } }, cn: { translation: { home: "首页", about_us: "关于我们", products: "产品", applications: "应用", contact_us: "联系我们", language: "CN", awards: "获奖", catalogue: "产品目录", equipment: "高端医疗设备", aerospace: "航空航天与国防", telecommunication: "电信应用", implantable: "植入式医疗设备", vehicle: "电动汽车", industrial: "工业应用", back_to_products: "返回产品", available_documents: "可用文档", download: "下载PDF", subcategories: "子分类" } } } }, (err,t)=>{ if(!err) document.querySelectorAll('[data-i18n]').forEach(el=> el.textContent = i18next.t(el.getAttribute('data-i18n'))); });
+        function changeLanguage(lng){ if (typeof i18next !== 'undefined') i18next.changeLanguage(lng, ()=>{ document.querySelectorAll('[data-i18n]').forEach(el=> el.textContent = i18next.t(el.getAttribute('data-i18n'))); }); }
+
+        const productData = { en_name: 'Wideband Transformers', jp_name: 'ワイドバンド変圧器', cn_name: '宽带变压器', description_en: 'Wideband transformers for high-frequency RF and signal applications', description_jp: '高周波RF及びシグナルアプリケーション向けのワイドバンド変圧器', description_cn: '用于高频射频和信号应用的宽带变压器', pdfs: [ { series: 'LM301-1L', filename: 'lm301-1l.pdf' }, { series: 'Wideband RF', filename: 'wideband_rf.pdf' } ] };
+        const allProducts = [ 
+    { id: 'power_inductors', name_en: 'Power Inductors', name_jp: 'パワーインダクタ', name_cn: '电源电感器' }, 
+    { id: 'comm_magnetic', name_en: 'Communication Magnetic Components', name_jp: '通信用磁気部品', name_cn: '通信磁性元件' }, 
+    { id: 'switching_power', name_en: 'Switching Power Magnetic Components', name_jp: 'スイッチング電源磁気部品', name_cn: '开关电源磁性元件' }, 
+    { id: 'transformers_choke', name_en: 'Transformers and Choke Coils', name_jp: 'トランス及びチョークコイル', name_cn: '变压器和扼流圈' }, 
+    { id: 'power_transformers', name_en: 'Power Transformers', name_jp: 'パワー変圧器', name_cn: '电力变压器' }, 
+    { id: 'current_sense', name_en: 'Current Sense Transformers', name_jp: 'カレントセンス変圧器', name_cn: '电流传感变压器' }, 
+    { id: 'wideband', name_en: 'Wideband Transformers', name_jp: 'ワイドバンド変圧器', name_cn: '宽带变压器' },
+    { id: 'inductors_shielded_smt', name_en: 'Inductors, Shielded, SMT', name_jp: '屏蔽貼片電感', name_cn: '屏蔽贴片电感' },
+    { id: 'inductors_shielded_thru_hole', name_en: 'Inductors, Shielded, Thru Hole', name_jp: '屏蔽插件電感', name_cn: '屏蔽插件电感' },
+    { id: 'inductors_unshielded_smt', name_en: 'Inductors, Unshielded, SMT', name_jp: '非屏蔽貼片電感', name_cn: '非屏蔽贴片电感' },
+    { id: 'inductors_unshielded_thru_hole', name_en: 'Inductors, Unshielded, Thru-hole', name_jp: '非屏蔽插件電感', name_cn: '非屏蔽插件电感' },
+    { id: 'transformers_telecom_smt', name_en: 'Transformers, Telecom, SMT', name_jp: '通信用貼片變壓器', name_cn: '通信贴片变压器' },
+    { id: 'transformers_telecom_thru_hole', name_en: 'Transformers, Telecom, Thru Hole', name_jp: '通信用插件變壓器', name_cn: '通信插件变压器' }
+];
+
+        function updateContent() { const currentLang = i18next.language; const nameKey = currentLang === 'ja' ? 'jp_name' : currentLang === 'cn' ? 'cn_name' : 'en_name'; const descKey = currentLang === 'ja' ? 'description_jp' : currentLang === 'cn' ? 'description_cn' : 'description_en'; document.getElementById('productTitle').innerHTML = `<a href="products.html#wideband" style="text-decoration: none; color: inherit;">${productData[nameKey]}</a>`; document.getElementById('productDescription').textContent = productData[descKey]; document.getElementById('pdfCount').textContent = `PDF Files: ${productData.pdfs.length}`; }
+        function renderPdfList() { const pdfList = document.getElementById('pdfList'); pdfList.innerHTML = ''; productData.pdfs.forEach(pdf => { const pdfItem = document.createElement('div'); pdfItem.className = 'pdf-item'; pdfItem.innerHTML = `<div><div class="pdf-series-name">${pdf.series}</div><div class="pdf-filename">${pdf.filename}</div></div><a href="Active/${pdf.filename}" class="pdf-download-btn" download><i class="fas fa-download"></i> <span data-i18n="download">Download PDF</span></a>`; pdfList.appendChild(pdfItem); }); }
+        function renderNavigationLinks() { const currentIndex = 6; const prevProduct = allProducts[(currentIndex - 1 + allProducts.length) % allProducts.length]; const nextProduct = allProducts[(currentIndex + 1) % allProducts.length]; const currentLang = i18next.language; const nameKey = currentLang === 'ja' ? 'name_jp' : currentLang === 'cn' ? 'name_cn' : 'name_en'; document.getElementById('navigationLinks').innerHTML = `<a href="${prevProduct.id}.html" class="nav-link-prev"><i class="fas fa-arrow-left"></i> ${prevProduct[nameKey]}</a><span style="color: #999; font-size: 0.9rem;"><i class="fas fa-info-circle"></i></span><a href="${nextProduct.id}.html" class="nav-link-next">${nextProduct[nameKey]} <i class="fas fa-arrow-right"></i></a>`; }
+
+        document.addEventListener('DOMContentLoaded', () => { updateContent(); renderPdfList(); renderNavigationLinks(); });
+    </script>
+</body>
+</html>
