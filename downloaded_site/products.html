@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Datatronic - Product catalog" name="description"/>
+<meta content="magnetic components, products" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<title>Datatronic - Products</title>
+<meta id="top"/> <!-- Target for back-to-top button -->
+<!-- Bootstrap 5 -->
+<link href="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+<link href="fonts.googleapis.com/css2" rel="stylesheet"/>
+<link href="unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet"/>
+<script src="unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+<script src="cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script src="unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Keep styles and scripts consistent with index.html -->
+<link href="css/common.css" rel="stylesheet"/>
+<style>
+        /* Minimal copy of index styles to match look-and-feel for products page */
+        :root { --accent-color: #4A4A4A; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #E0E0E0; color: #333130; font-size: 18px; line-height: 1.6; }
+        header { background: linear-gradient(to right, #4A4A4A, #6A6A6A); color: white; padding: 2em; text-align: center; }
+        /* Navbar styles moved to css/common.css */
+        /* See css/common.css for unified navbar rules */
+        .container-fluid { max-width: 1200px; margin: 2em auto; padding: 0 1em; }
+
+        .container-fluid { max-width: 1200px; margin: 2em auto; padding: 0 1em; }
+        .section { margin-bottom: 3em; padding: 3rem 1rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em; }
+        .product-box { background: white; padding: 1em; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .product-box img { width: 100%; height: auto; display:block; }
+
+        /* Product catalog list styles */
+        .product-catalog .product-category { margin-bottom: 1.5rem; }
+        .product-catalog h4 { margin-bottom: 0.5rem; }
+        .product-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+        .product-list li { }
+        .product-list a { display: block; padding: 0.6rem 0.8rem; background: #fff; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); color: inherit; text-decoration: none; }
+        .product-list a:hover { box-shadow: 0 6px 14px rgba(0,0,0,0.08); }
+        @media (max-width: 768px) { .product-list { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .product-list { grid-template-columns: 1fr; } }
+
+        /* Contact sidebar styles moved to css/common.css */
+        /* See css/common.css for unified contact sidebar and navbar rules */
+    </style>
+</head>
+<body class="solid-nav" id="top">
+<nav id="navbar">
+<div class="logo"><img alt="Datatronic Logo" src="images/logo.png"/></div>
+<div class="nav-links" id="navLinks">
+<a data-i18n="home" href="index.html">Home</a>
+<a data-i18n="about_us" href="about.html">About Us</a>
+<a class="active" data-i18n="products" href="products.html">Products</a>
+<a data-i18n="catalogue" href="catalogue.html">Catalogue</a>
+<a data-i18n="applications" href="applications.html">Applications</a>
+<a data-i18n="awards" href="index.html">Awards</a>
+<a data-i18n="contact_us" href="contact.html">Contact Us</a>
+<div class="dropdown">
+<button class="dropdown-btn" data-i18n="language">EN</button>
+<div class="dropdown-content">
+<a href="#" onclick="changeLanguage('en')">EN</a>
+<a href="#" onclick="changeLanguage('ja')">JP</a>
+<a href="#" onclick="changeLanguage('cn')">CN</a>
+</div>
+</div>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+</nav>
+<!-- 側邊聯絡欄（左側, 可收起, 電話 & WeChat） -->
+<nav aria-hidden="false" class="collapsed" id="contactSidebar">
+<div class="mystickyelement-lists-wrap">
+<ul class="mystickyelements-lists">
+<li aria-label="Toggle contact sidebar" class="mystickyelements-minimize" onclick="toggleSidebar()" role="button" tabindex="0">
+                    ←
+                </li>
+<li class="mystickyelements-social-icon-li mystickyelements-list-item">
+<span aria-expanded="false" aria-haspopup="true" class="mystickyelements-social-icon social-phone" data-flyout="phone">
+<i aria-hidden="true" class="fas fa-phone-alt"></i>
+</span>
+<div aria-hidden="true" class="mystickyelements-flyout phone-flyout">
+<div class="flyout-inner"><a href="tel:(852) 61852303">(852) 61852303</a><br/>Mon-Fri 9:00-18:00</div>
+</div>
+</li>
+<li class="mystickyelements-social-icon-li mystickyelements-list-item">
+<span aria-expanded="false" aria-haspopup="true" class="mystickyelements-social-icon social-wechat" data-flyout="wechat">
+<i aria-hidden="true" class="fab fa-weixin"></i>
+</span>
+<div aria-hidden="true" class="mystickyelements-flyout mystickyelements-wechat-flyout">
+<div class="flyout-inner"><img alt="WeChat QR" src="images/logo.png"/><br/>WeChat: datatron</div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<section class="section" style="background:#f7f7f7; padding-top: 120px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 text-center">
+<h1><strong><span data-i18n="products">Our Products</span></strong></h1>
+<p class="product-section-description" data-i18n="products_desc">Dedicated Service and Customization. Global Facilities to Serve Our Clients.</p>
+<div class="is-divider divider clearfix" style="margin-top:0.5em;margin-bottom:2.5em;max-width:40px;height:4px;background-color:rgb(216, 26, 41); margin-left: auto; margin-right: auto;"></div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="product-catalog">
+<p class="lead text-center" style="max-width:900px;margin:0 auto 1.5rem;">Dedicated Service and Customization. Global Facilities to Serve Our Clients.</p>
+<div class="product-category">
+<h4>Power Inductors</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e5%b1%8f%e8%94%bd%e8%b2%bc%e7%89%87%e9%9b%bb%e6%84%9finductors-shieldedsmt/index.html">Inductors, Shielded, SMT</a></li>
+<li><a href="datatronic.com.hk/en/%e5%b1%8f%e8%94%bd%e6%8f%92%e4%bb%b6%e9%9b%bb%e6%84%9finductors-shielded-thru-hole/index.html">Inductors, Shielded, Thru Hole</a></li>
+<li><a href="datatronic.com.hk/en/%e9%9d%9e%e5%b1%8f%e8%94%bd%e8%b2%bc%e7%89%87%e9%9b%bb%e6%84%9finductors-unshielded-smt/index.html">Inductors, Unshielded, SMT</a></li>
+<li><a href="datatronic.com.hk/en/%e9%9d%9e%e5%b1%8f%e8%94%bd%e6%8f%92%e4%bb%b6%e9%9b%bb%e6%84%9finductors-unshielded-thru-hole/index.html">Inductors, Unshielded, Thru-hole</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Communication Magnetic Components</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e9%80%9a%e4%bf%a1%e8%b2%bc%e7%89%87%e8%ae%8a%e5%a3%93%e5%99%a8transformers-telecom-smt/index.html">Transformers, Telecom, SMT</a></li>
+<li><a href="datatronic.com.hk/en/%e9%80%9a%e4%bf%a1%e6%8f%92%e4%bb%b6%e8%ae%8a%e5%a3%93%e5%99%a8transformers-telecom-thru-hole/index.html">Transformers, Telecom, Thru Hole</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Switching Power Magnetic Components</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e9%9b%bb%e6%b5%81%e6%aa%a2%e6%b8%ac%e8%b2%bc%e7%89%87%e8%ae%8a%e5%a3%93%e5%99%a8transformers-current-sense-smt/index.html">Transformers, Current Sense, SMT</a></li>
+<li><a href="datatronic.com.hk/en/%e9%9b%bb%e6%b5%81%e6%aa%a2%e6%b8%ac%e6%8f%92%e4%bb%b6%e8%ae%8a%e5%a3%93%e5%99%a8transformers-current-sense-thru-hole/index.html">Transformers, Current Sense, Thru-hole</a></li>
+<li><a href="datatronic.com.hk/en/%e6%9f%b5%e9%a9%85%e5%8b%95%e8%84%88%e8%a1%9d%e8%b2%bc%e7%89%87%e8%ae%8a%e5%a3%93%e5%99%a8gate-drive-pulse-xfmr-smt/index.html">Gate Drive &amp; Pulse XFMR, SMT</a></li>
+<li><a href="datatronic.com.hk/en/%e6%9f%b5%e9%a9%85%e5%8b%95%e8%84%88%e8%a1%9d%e6%8f%92%e4%bb%b6%e8%ae%8a%e5%a3%93%e5%99%a8gate-drive-pulse-xfmrthru-hole/index.html">Gate Drive &amp; Pulse XFMR, Thru-hole</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Transformers and Choke Coils (Customizable)</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e7%a3%81%e6%87%b8%e6%b5%ae%e7%b7%9a%e5%9c%88maglev-coils/index.html">MagLev Coils</a></li>
+<li><a href="datatronic.com.hk/en/%e9%9b%bb%e7%a3%81%e7%b7%9a%e5%9c%88solenoids-coils/index.html">Solenoids Coils</a></li>
+<li>Chokes</li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Power Transformers (Customizable)</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e4%b8%89%e7%9b%b8%e8%ae%8a%e5%a3%93%e5%99%a8three-phase-transformers/index.html">Three Phase Transformers</a></li>
+<li><a href="datatronic.com.hk/en/50-60hz%e8%ae%8a%e5%a3%93%e5%99%a850-60hz-step-control-transformers/index.html">50/60Hz Step/Control Transformers</a></li>
+<li><a href="datatronic.com.hk/en/400hz%e8%ae%8a%e5%a3%93%e5%99%a8400hz-transformers-inductors/index.html">400Hz Transformers/Inductors</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Current Sense Transformers (Customizable)</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e6%b5%81%e9%ab%94%e6%b8%ac%e8%a9%a6fluid/index.html">Fluid</a></li>
+<li><a href="datatronic.com.hk/en/%e9%80%9f%e5%ba%a6%e6%b8%ac%e8%a9%a6speed-sensor/index.html">Speed Sensor</a></li>
+<li><a href="datatronic.com.hk/en/%e4%bd%8d%e7%bd%ae%e6%b8%ac%e8%a9%a6position/index.html">Position</a></li>
+<li>Telemetry Coils</li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Wideband Transformers</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e9%ab%98%e9%a0%bb%e8%b2%bc%e7%89%87%e8%ae%8a%e5%a3%93%e5%99%a8inductors-high-frequency-wirewound/index.html">Inductors, High Frequency Wirewound</a></li>
+<li><a href="datatronic.com.hk/en/%e7%a9%ba%e8%8a%af%e8%b2%bc%e7%89%87%e8%ae%8a%e5%a3%93%e5%99%a8inductors-air-core/index.html">Inductors, Air Core</a></li>
+<li><a href="datatronic.com.hk/en/%e5%b0%84%e9%a0%bb%e5%af%ac%e5%b8%b6%e8%ae%8a%e5%a3%93%e5%99%a8transformers-rf-wideband/index.html">Transformers, RF, Wideband</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Lighting Magnetic Components (Customizable)</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e7%85%a7%e6%98%8e%e9%8e%ae%e6%b5%81%e5%99%a8custom-lighting-ballast-transformers/index.html">Custom Lighting Ballast Transformers</a></li>
+<li><a href="datatronic.com.hk/en/%e7%9a%ae%e7%93%a3%e5%a3%93%e8%bc%89%e9%8e%ae%e6%b5%81%e5%99%a8flap-ballast-transformers/index.html">Flap Ballast Transformers</a></li>
+</ul>
+</div>
+<div class="product-category">
+<h4>Medical Application Coils (Customizable)</h4>
+<ul class="product-list">
+<li><a href="datatronic.com.hk/en/%e6%a4%8d%e5%85%a5%e7%b7%9a%e5%9c%88implantable-coils/index.html">Implantable Coils</a></li>
+<li><a href="datatronic.com.hk/en/%e9%86%ab%e5%ad%b8%e6%87%89%e7%94%a8%e7%b7%9a%e5%9c%88medical-application-coils/index.html">Medical Application Coils</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-4 footer-logo" style="text-align:left;">
+<a href="index.html"><img alt="Datatronic Logo" src="images/logo.png"/></a>
+</div>
+<div class="col-md-4 footer-links" style="text-align:left;">
+<ul class="list-unstyled mb-0" style="padding-left:0;margin:0;">
+<li><a href="index.html" style="color:inherit;text-decoration:none;">Home</a></li>
+<li><a href="products.html" style="color:inherit;text-decoration:none;">Products</a></li>
+<li><a href="about.html" style="color:inherit;text-decoration:none;">About Us</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Catalogue</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Applications</a></li>
+<li><a href="index.html" style="color:inherit;text-decoration:none;">Awards</a></li>
+<li><a href="page-template.html" style="color:inherit;text-decoration:none;">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-md-4 footer-contact" style="text-align:left;">
+<strong>Contact Us</strong>
+<p style="margin:.5rem 0 0;line-height:1.4;">
+                        TEL :（852）25648477<br/>
+                        TEL :（852）61852303<br/>
+                        WeChat: datatron<br/><br/>
+<strong>Address:</strong><br/>
+                        19/F, North Point Industrial Building, 499 King's Road, North Point, Hong Kong<br/><br/>
+<strong>Email：</strong><br/>
+<a href="mailto:datatron@datatronic.com.hk" style="color:inherit;text-decoration:underline;">datatron@datatronic.com.hk</a>
+</p>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12 text-center small" style="opacity:0.9;margin-top:1rem;">
+                    Copyright 2025 © Datatronic Limited
+                </div>
+</div>
+</div>
+</footer>
+<!-- Back to Top (index-style) -->
+<a class="back-to-top button icon invert plain fixed bottom z-1 is-outline round" href="#top" id="top-link" style="display: none;">
+<i class="fas fa-angle-up"></i>
+</a>
+<script>
+        // Minimal i18n support copied from index
+        i18next.init({ lng: 'en', resources: { en: { translation: { products: 'Products', catalogue: 'Catalogue', awards: 'Awards', products_desc: 'Dedicated Service and Customization. Global Facilities to Serve Our Clients.', language: 'EN' } }, ja: { translation: { products: '製品', catalogue: 'カタログ', awards: '栄誉と受賞', products_desc: '専用サービスとカスタマイズ。 グローバルな設備でお客様をサポートします。', language: 'JP' } }, cn: { translation: { products: '产品', catalogue: '产品目录', awards: '荣誉与奖项', products_desc: '专注服务与定制。全球化工厂网络为客户服务。', language: 'CN' } } } }, (err,t) => { if(!err) updateContent(); });
+        function changeLanguage(lng){ i18next.changeLanguage(lng, updateContent); const btn = document.querySelector('.dropdown button'); if(btn) btn.textContent = lng.toUpperCase(); }
+        function updateContent(){ document.querySelectorAll('[data-i18n]').forEach(el=> el.textContent = i18next.t(el.getAttribute('data-i18n'))); }
+
+        // Shared helpers provided by js/common.js; i18n init kept above.
+    </script>
+<script>
+    const ws = new WebSocket(`ws://${location.host}`);
+    ws.onmessage = () => location.reload();
+    ws.onerror = () => console.log('WebSocket connection error');
+  </script></body>
+</html>

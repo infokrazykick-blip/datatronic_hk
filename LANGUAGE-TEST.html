@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Language Persistence Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 3px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    </style>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <h1>🌐 语言持久化测试 | Language Persistence Test</h1>
+    
+    <div class="test-section">
+        <h2>当前存储的语言 | Saved Language</h2>
+        <div id="savedLang" class="status info">
+            检查中... | Checking...
+        </div>
+        <button onclick="checkSavedLanguage()">刷新 | Refresh</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>测试步骤 | Test Steps</h2>
+        <ol>
+            <li>打开以下任意网站 | Open any of these sites:
+                <ul>
+                    <li><a href="http://localhost:8000/index.html" target="_blank">首页 | Home</a></li>
+                    <li><a href="http://localhost:8000/about.html" target="_blank">关于我们 | About Us</a></li>
+                    <li><a href="http://localhost:8000/products.html" target="_blank">产品 | Products</a></li>
+                    <li><a href="http://localhost:8000/contact.html" target="_blank">联系我们 | Contact Us</a></li>
+                </ul>
+            </li>
+            <li>点击语言选择器 | Click language selector
+                <ul>
+                    <li>选择"日文 | JP"</li>
+                    <li>或选择"中文 | CN"</li>
+                </ul>
+            </li>
+            <li>导航到其他页面 | Navigate to another page</li>
+            <li>✅ 验证语言保持不变 | Verify language persists</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>localStorage 内容 | localStorage Content</h2>
+        <div id="storageContent" class="status"></div>
+        <button onclick="displayStorage()">显示 | Show</button>
+        <button onclick="clearStorage()">清除 | Clear</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>浏览器控制台 | Browser Console</h2>
+        <p>打开浏览器开发者工具查看控制台日志:</p>
+        <code>F12 或 Cmd+Option+I → Console 标签页</code>
+        <p>应该能看到语言加载和切换的日志信息。</p>
+    </div>
+
+    <script>
+        function checkSavedLanguage() {
+            const saved = localStorage.getItem('preferredLanguage') || '未保存 (using default: en)';
+            const elem = document.getElementById('savedLang');
+            elem.innerHTML = `<strong>当前保存语言 | Current Saved Language:</strong> <code>${saved}</code>`;
+            elem.className = 'status success';
+            console.log('✅ Saved language:', saved);
+        }
+
+        function displayStorage() {
+            const content = Object.keys(localStorage).map(key => 
+                `<strong>${key}:</strong> <code>${localStorage.getItem(key)}</code>`
+            ).join('<br>') || '存储为空 | Storage is empty';
+            document.getElementById('storageContent').innerHTML = content || '存储为空 | Storage is empty';
+        }
+
+        function clearStorage() {
+            localStorage.clear();
+            document.getElementById('storageContent').innerHTML = '已清除 | Cleared';
+            checkSavedLanguage();
+        }
+
+        // Page load
+        window.addEventListener('load', checkSavedLanguage);
+    </script>
+</body>
+</html>
