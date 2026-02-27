@@ -13,6 +13,12 @@ Disallow: /src/
 Disallow: /strapi/
 Disallow: /*.json$
 Disallow: /Active/
+Disallow: /screenshots/
+Disallow: /data/
+Disallow: /*.md$
+Disallow: /LANGUAGE-TEST.html
+Disallow: /reset-language.html
+Disallow: /*.xlsx$
 
 # Specify crawl delay (in seconds) to avoid server overload
 Crawl-delay: 1
