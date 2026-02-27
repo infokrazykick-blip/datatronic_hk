@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datatronic - Award-winning manufacturer of custom magnetic components for medical, aerospace, telecommunications, and industrial applications. ISO 9001 certified since 1971.">
+    <meta name="keywords" content="magnetic components, custom magnetics, transformers, inductors, medical equipment, aerospace components, electric vehicles, telecommunications, magnetic design">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Datatronic Ltd.">
+    <meta name="theme-color" content="#d81a29">
+    <title>Datatronic - Custom Magnetic Components | Medical, Aerospace & Industrial Solutions</title>
+    <link rel="canonical" href="https://datatronic.com.hk/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datatronic.com.hk/">
+    <meta property="og:title" content="Datatronic - Custom Magnetic Components & Solutions">
+    <meta property="og:description" content="Award-winning manufacturer of custom magnetic components for medical, aerospace, and industrial applications. ISO 9001 certified.">
+    <meta property="og:image" content="https://datatronic.com.hk/images/logo.png">
+    <meta property="og:site_name" content="Datatronic">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://datatronic.com.hk/">
+    <meta property="twitter:title" content="Datatronic - Custom Magnetic Components">
+    <meta property="twitter:description" content="Award-winning manufacturer of custom magnetic components for medical, aerospace, and industrial applications.">
+    <meta property="twitter:image" content="https://datatronic.com.hk/images/logo.png">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 5 for richer icon support (including fab for WeChat) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Flickity CSS for Honors/Awards Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- i18next -->
+    <script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- 結構化數據 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Datatronic Ltd.",
+            "alternateName": "Datatronic",
+            "url": "https://datatronic.com.hk",
+            "logo": "https://datatronic.com.hk/images/logo.png",
+            "description": "Award-winning manufacturer of custom magnetic components for medical, aerospace, telecommunications, and industrial applications since 1971.",
+            "foundingDate": "1971",
+            "areaServed": "Global",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+852-2564-8477",
+                "email": "datatron@datatronic.com.hk",
+                "contactType": "Customer Service",
+                "availableLanguage": ["en", "zh", "ja"]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "19/F, North Point Industrial Building, 499 King's Road",
+                "addressLocality": "North Point",
+                "addressRegion": "Hong Kong",
+                "postalCode": "",
+                "addressCountry": "HK"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/datatronic",
+                "https://www.facebook.com/datatronic"
+            ]
+        }
+    </script>
+    
+    <!-- BreadcrumbList for Homepage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://datatronic.com.hk/"
+                }
+            ]
+        }
+    </script>
+    
+    <!-- CSS 樣式 -->
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        :root { --accent-color: #4A4A4A; }
+        /* Local page behavioral overrides */
+        body { 
+            scroll-behavior: smooth;
+        }
+        /* Navbar and dropdown styles are centralized in css/common.css */
+        body.solid-nav #navbar { background-color: rgba(0,0,0,0.7) !important; }
+        /* Make all headings bold */
+        h1,h2,h3,h4,h5,h6 { font-weight: 700; }
+        /* Carousel/Section Styles */
+        .carousel { position: relative; width: 100%; height: 580px; margin-top: 0; }
+        .carousel-item { position: relative; }
+        .carousel-item img { object-fit: cover; object-position: center; height: 580px; width: 100%; }
+        /* Ensure bottom area visible for banner4 & banner5 */
+        .carousel-item:nth-child(4) img,
+        .carousel-item:nth-child(5) img { object-position: center bottom; }
+        /* Carousel overlay: removed darkening to make images show without transparent gray */
+        .carousel-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: transparent; pointer-events: none; z-index: 1; }
+        .carousel-caption { z-index: 2; left: 6%; bottom: 28%; max-width: 50%; text-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        .carousel-item:first-child .carousel-caption { text-shadow: 0 4px 12px rgba(0,0,0,0.2); } /* Lighter shadow for first slide */
+        .carousel-caption h1 { font-size: 3.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.3rem; }
+        .carousel-caption p { color: rgba(255,255,255,0.9); margin: 0 0 1rem; font-size: 1.4rem; }
+        /* Controls styling */
+        .carousel-control-prev, .carousel-control-next { width: 56px; height: 56px; border-radius: 50%; background: rgba(0,0,0,0.45); display: flex; align-items: center; justify-content: center; top: 50%; transform: translateY(-50%); }
+        .carousel-control-prev-icon, .carousel-control-next-icon { background-size: 32px 32px; }
+        .carousel-indicators { bottom: 20px; }
+        .carousel-indicators [data-bs-target] { width: 12px; height: 12px; border-radius: 50%; background-color: rgba(255,255,255,0.45); border: none; }
+        .carousel-indicators .active { background-color: #d81a29; box-shadow: 0 4px 12px rgba(216,26,41,0.25); }
+        /* Responsive carousel design */
+        @media (max-width: 1024px) {
+            .carousel { height: 430px; }
+            .carousel-item img { height: 430px; }
+            .carousel-caption { max-width: 60%; }
+            .carousel-caption h1 { font-size: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .carousel { height: 330px; }
+            .carousel-item img { height: 330px; }
+            .carousel-caption { bottom: 18%; max-width: 80%; left: 4%; right: 4%; }
+            .carousel-caption h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.8rem; }
+            .about-content h2 { font-size: 1.8rem; }
+        }
+        @media (max-width: 576px) {
+            .carousel { height: 330px; }
+            .carousel-item img { height: 330px; }
+            .carousel-caption { bottom: 15%; max-width: 85%; left: 3%; right: 3%; }
+            .carousel-caption h1 { font-size: 1.4rem; }
+            .carousel-caption p { font-size: 1.1rem; }
+        }
+        .container-fluid { max-width: 1200px; margin: 2em auto; padding: 0 1em; } 
+        .section { 
+            margin-bottom: 0; 
+            opacity: 1; 
+            padding: 3rem 1rem 0.5rem; /* Further reduced bottom spacing */
+        }
+        .section-title {
+            text-align: center; font-weight: 700; font-size: 2.2rem; margin-bottom: 0.8rem; color: #333130;
+        }
+        .section-desc {
+            text-align: center; max-width: 900px; margin: 0 auto 1.5rem; color: #555; font-size: 1.15rem; /* Reduced margin-bottom */
+        }
+        /* Business Sector Styles */
+        .business-sector-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            height: 100%;
+        }
+        /* Ensure sector images have a consistent aspect ratio (approx 377x215 -> 57% height) */
+        .img-inner.image-cover { position: relative; width: 100%; padding-top: 57%; overflow: hidden; }
+        .img-inner.image-cover img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+        .sector-title { font-weight: 700; font-size: 1.15rem; color: #333130; }
+        .h-tit { font-weight: 700; color: #333130; margin-right: 0.3rem; }
+        .sector-desc-text { color: #666; font-size: 1rem; line-height: 1.65; margin-bottom: 1rem; }
+        .sector-button-full {
+            width: 25%;
+            min-width: 80px; 
+            margin-top: 0.5rem; 
+        }
+        /* --- Our Products Fix --- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .product-item { 
+            text-align: center; 
+            height: 100%; 
+        }
+        .product-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; 
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-box a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .product-box:hover { 
+            transform: translateY(-6px); 
+            box-shadow: 0 12px 28px rgba(216, 26, 41, 0.15); 
+        }
+        .box-image { position: relative; overflow: hidden; }
+        .box-image.image-cover, .box-image .image-cover { padding-top: 75%; overflow: hidden; }
+        .box-image img { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            object-fit: cover; transition: transform 0.4s ease; 
+            border: none; outline: none; display: block; 
+        }
+        .product-box:hover .box-image img { transform: scale(1.08); }
+        .box-text-bottom {
+            position: relative; 
+            bottom: auto;
+            left: auto;
+            width: 100%;
+            margin-top: auto; 
+        }
+        .box-text {
+            background-color: #d81a29;
+            color: white;
+            padding: 0.65rem 0.5rem;
+            text-align: center;
+        }
+        .box-text h4 { margin: 0; font-size: 0.95rem; font-weight: 600; line-height: 1.35; }
+        /* --- End Our Products Fix --- */
+        /* Updated "Cool" About Section Styles */
+        .about-section-container {
+            position: relative;
+            padding: 3rem 1rem 8rem; /* Increased bottom spacing to accommodate larger shifted image */
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        /* Background decorative text */
+        .about-section-container::before {
+            content: "DATATRONIC";
+            position: absolute;
+            bottom: -2.5rem; 
+            right: calc(-5% + 100px);
+            font-size: 9.6rem;
+            font-weight: 900;
+            color: rgba(0,0,0,0.03);
+            z-index: 0;
+            pointer-events: none;
+            letter-spacing: 0.15rem;
+            line-height: 1; 
+            transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transform: translateX(var(--bg-offset, 0)); /* Parallax variable */
+        }
+        .about-section-container:hover::before {
+            transform: translateX(calc(var(--bg-offset, 0) - 30px));
+        }
+        .about-box-wrapper { 
+            position: relative;
+            z-index: 1;
+            max-width: 1100px; 
+            margin: 0 auto;
+        }
+        .about-box {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            min-height: 440px; /* Further reduced from 480px */
+        }
+        .about-box .box-image {
+            flex: 0 0 55%;
+            position: relative;
+            z-index: 2;
+            transition: transform 0.5s ease;
+            transform: translate(-40px, 40px); /* Moved left and down */
+        }
+        .about-box .box-image::after {
+            content: "";
+            position: absolute;
+            top: 25px; /* Symmetrical offset */
+            left: -25px; /* Requested 25px left */
+            width: 100%;
+            height: 100%;
+            border: 2px solid #d81a29;
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+        .about-box:hover .box-image::after {
+            top: 12px;
+            left: -12px;
+        }
+        .about-box .box-image .image-cover {
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+        }
+        .about-box .box-image img {
+            width: 100%;
+            height: 500px; /* Increased height for larger impact */
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+        .about-box:hover .box-image img {
+            transform: scale(1.05);
+        }
+        .about-content {
+            flex: 0 0 65%; /* Wider card */
+            background: #ffffff;
+            padding: 2.2rem 2.8rem; 
+            margin-left: -15%; 
+            position: relative;
+            z-index: 3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06); 
+            border-radius: 4px;
+            border-top: 5px solid #d81a29;
+            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            text-align: left;
+            transform: translateY(-58px); /* Moved up further by 8px */
+        }
+        .about-content .section-title {
+            text-align: left;
+            margin-left: 0;
+        }
+        .about-content .section-desc {
+            text-align: left;
+            margin-left: 0;
+        }
+        .about-content .is-divider {
+            margin-left: 0; /* Align divider to left */
+        }
+        .about-box:hover .about-content {
+            transform: translateY(-66px); /* Hover lift adjusted (-58 - 8) */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .about-content h2 {
+            font-size: 2.2rem; /* Impactful title */
+            color: #1a1a1a;
+            margin-bottom: 1.2rem;
+            position: relative;
+            display: inline-block;
+        }
+        .about-content h2::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #d81a29;
+        }
+        .about-content p {
+            color: #666;
+            line-height: 1.65; 
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-locations {
+            margin-top: 1.2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.6rem;
+        }
+        .about-locations p {
+            margin: 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-weight: 500;
+            color: #333;
+            font-size: 0.95rem; /* Slightly smaller font */
+        }
+        .about-locations p::before {
+            content: "\f058"; /* check-circle */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #d81a29;
+        }
+        /* More Dynamic Button Effect */
+        .about-content .btn-outline-danger {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .about-content .btn-outline-danger:hover {
+            color: #fff !important;
+            background-color: #d81a29 !important;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(216, 26, 41, 0.3);
+        }
+        /* Updated Section Divider Animation */
+        .is-divider {
+            height: 4px;
+            display: block;
+            background-color: rgb(216, 26, 41);
+            margin: 0.5em auto 2.5em;
+            width: 0; /* Start at 0 width */
+            max-width: 60px; /* Target width slightly wider */
+            transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .is-divider.reveal-active {
+            width: 60px; /* Expand when element itself is revealed */
+        }
+        /* Banner Text Animation */
+        .carousel-caption {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease;
+            display: block !important;
+        }
+        .carousel-item.active .carousel-caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (max-width: 576px) {
+            .carousel-caption {
+                left: 3% !important;
+                right: 3% !important;
+                bottom: 12% !important;
+                max-width: 94% !important;
+            }
+            .carousel-caption h1 { font-size: 1.2rem !important; }
+            .carousel-caption p { font-size: 0.9rem !important; }
+        }
+        /* Continuous Image Zoom for Sectors/Products */
+        .business-sector-item .img-inner img, 
+        .product-box .box-image img {
+            transition: transform 12s linear; /* Very slow continuous feel */
+        }
+        .business-sector-item:hover .img-inner img,
+        .product-box:hover .box-image img {
+            transform: scale(1.15);
+        }
+        
+        @media (max-width: 992px) {
+            .about-box { flex-direction: column; }
+            .about-box .box-image, .about-content { flex: 0 0 100%; width: 100%; margin-left: 0; }
+            .about-content { padding: 2rem; margin-top: -2rem; transform: none; }
+            .about-section-container::before { display: none; }
+        }
+        /* Honors/Awards Carousel (Flickity) */
+        .awards-section-container {
+            margin: 0 auto;
+            max-width: 100%;
+            width: 100%;
+            background-color: transparent; /* match page background */
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            /* transform: translateY(-50px); removed for cleaner spacing control */
+        }
+        .flickity-viewport { padding: 20px 0 20px 0 !important; }
+        /* Gallery column responsive sizing */
+        .gallery-col { width: 20%; padding: 5px; } /* large-columns-5 for desktop, tighter spacing */
+        @media (max-width: 1024px) {
+            .gallery-col { width: 33.333%; } /* 3 columns on tablet */
+        }
+        @media (max-width: 768px) {
+            .gallery-col { width: 50%; } /* 2 columns on tablet-small */
+        }
+        @media (max-width: 576px) {
+            .gallery-col { width: 100%; } /* 1 column on mobile */
+        }
+        .gallery-col .col-inner {
+            background: transparent;
+            padding: 8px; /* reduced padding from 12px */
+            border-radius: 0;
+            box-shadow: none;
+            transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 160px; /* reduced from 200px */
+        }
+        .gallery-col .col-inner:hover { transform: translateY(-5px); }
+        .gallery-col .col-inner { background: transparent; border-radius: 0; padding: 8px; box-shadow: none; }
+        /* === 核心輪播圖圖片 CSS 區塊 (固定高度 160px, 白色背景，響應式寬度) === */
+        .gallery-col .box-image.image-cover, .gallery-col .box-image .image-cover {
+            width: 100%;
+            height: 160px; /* reduced from 200px */
+            padding-top: 0;
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 6px;
+        }
+        @media (max-width: 768px) {
+            .gallery-col .box-image.image-cover, .gallery-col .box-image .image-cover {
+                height: 150px;
+            }
+        }
+        @media (max-width: 576px) {
+            .gallery-col .box-image.image-cover, .gallery-col .box-image .image-cover {
+                height: 120px;
+            }
+        }
+        .gallery-col .box-image.image-cover img, .gallery-col .box-image .image-cover img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: contain; /* show full image on white background */
+            display: block; border-radius: 6px;
+        }
+        /* === 核心輪播圖圖片 CSS 區塊結束 === */
+        /* ensure the image wrapper stretches to the fixed height and hides overflow */
+        .gallery-col .box-image { display: flex; justify-content: center; align-items: stretch; margin-bottom: 10px; }
+        /* duplicate fixed-height rules removed to avoid conflict; image-cover is defined above (200px) */
+        .gallery-col .box-image { background: transparent; border-radius: 0; padding: 0; }
+        .gallery-col .box-text { text-align: center; } 
+        .gallery-col .box-text p { margin: 0; font-size: 0.9em; font-weight: 600; color: #333130; }
+        /* Back-to-Top */
+        #top-link {
+            position: fixed; bottom: 20px; right: 20px; z-index: 990; display: none; width: 45px; height: 45px;
+            line-height: 45px; text-align: center; border-radius: 50%; background-color: #f0f0f0; border: 1px solid #ddd;
+            color: #666; box-shadow: 0 2px 5px rgba(0,0,0,0.08); transition: opacity 0.3s, visibility 0.3s, background-color 0.18s;
+            text-decoration: none; font-size: 1.2rem;
+        }
+        #top-link:hover { background-color: #e0e0e0; color: #333; }
+        
+        /* Responsive Media Query Integration */
+        @media (max-width: 992px) {
+            .product-grid { grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+            .about-box .box-image { width: 50%; }
+        }
+        @media (max-width: 768px) {
+            .product-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+            .box-text h4 { font-size: 0.88rem; }
+            .about-box { flex-direction: column; min-height: auto; }
+            .about-box .box-image { width: 100%; flex: 0 0 auto; }
+            .about-box .box-image .image-cover { padding-top: 75%; height: auto; border-radius: 8px 8px 0 0; }
+            .about-content { border-left: none; padding: 1.25em; }
+        }
+        @media (max-width: 576px) {
+            .product-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; padding: 0 0.5rem; }
+            .product-box { border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+            .box-image.image-cover, .box-image .image-cover { padding-top: 70%; }
+            .box-text h4 { font-size: 0.82rem; }
+            .box-text { padding: 0.5rem 0.4rem; }
+            .sector-button-full { width: 100%; }
+        }
+        /* Sector More button styles */
+        .sector-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            padding: 0.2rem 0.35rem;
+            border-radius: 8px;
+            border: 2px solid #d81a29;
+            background: #ffffff;
+            color: #d81a29;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.18s ease, color 0.18s ease, transform 0.08s ease;
+        }
+        .sector-button i { color: inherit; }
+        .sector-button:hover, .sector-button:focus {
+            background: #d81a29;
+            color: #ffffff;
+            text-decoration: none;
+        }
+            /* Contact sidebar styles moved to css/common.css */
+            /* See css/common.css for unified contact sidebar and navbar rules */
+            
+            /* Responsive typography for h3 and .section-title */
+            h3 { font-size: 2rem; }
+            .section-title { font-size: 2rem; }
+            
+            @media (max-width: 1024px) {
+                h3 { font-size: 1.6rem; }
+                .section-title { font-size: 1.6rem; }
+            }
+            
+            @media (max-width: 768px) {
+                h3 { font-size: 1.3rem; }
+                .section-title { font-size: 1.3rem; }
+            }
+            
+            @media (max-width: 480px) {
+                h3 { font-size: 1.1rem; }
+                .section-title { font-size: 1.1rem; }
+            }
+    </style>
+</head>
+<body id="top" class="solid-nav"> <!-- Add id="top" for back-to-top functionality -->
+
+    <!-- 導航欄 -->
+    <nav id="navbar">
+        <div class="logo">
+            <!-- 圖片使用佔位符，使用新的 50px 高度 -->
+            <a href="index.html" style="text-decoration: none;">
+                <img src="images/logo.png" alt="Datatronic Logo">
+            </a>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active" data-i18n="home">Home</a>
+            <a href="about.html" data-i18n="about_us">About Us</a>
+            <a href="products.html" data-i18n="products">Products</a>
+            <a href="catalogue.html" data-i18n="catalogue">Catalogue</a>
+            <div class="nav-dropdown">
+                <a href="applications.html" class="nav-dropdown-trigger" data-i18n="applications">Applications</a>
+                <div class="nav-dropdown-menu">
+                    <a href="Equipment.html" data-i18n="equipment">High-End Medical Equipment</a>
+                    <a href="Aerospace.html" data-i18n="aerospace">Aerospace & Defense</a>
+                    <a href="Telecommunication.html" data-i18n="telecommunication">Telecommunications</a>
+                    <a href="Implantable.html" data-i18n="implantable">Implantable Medical Device</a>
+                    <a href="Vehicle.html" data-i18n="vehicle">Electric Vehicle</a>
+                    <a href="Industrial.html" data-i18n="industrial">Industrial Application</a>
+                </div>
+            </div>
+            <a href="awards.html" data-i18n="awards">Awards</a>
+            <a href="contact.html" data-i18n="contact_us">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" data-i18n="language">EN</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')">EN</a>
+                    <a href="#" onclick="changeLanguage('ja')">JP</a>
+                    <a href="#" onclick="changeLanguage('cn')">CN</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- 側邊聯絡欄（左側, 可收起, 電話 & WeChat） -->
+    <nav id="contactSidebar" class="collapsed" aria-hidden="false">
+        <div class="mystickyelement-lists-wrap">
+            <ul class="mystickyelements-lists mysticky">
+                
+                <!-- Minimize Button -->
+                <li class="mystickyelements-minimize" onclick="toggleSidebar()" role="button" aria-label="Toggle contact sidebar" tabindex="0">
+                    &larr;
+                </li>
+
+                <!-- 聯絡電話 (tap to reveal) -->
+                <li class="mystickyelements-social-icon-li mystickyelements-list-item">
+                    <span class="mystickyelements-social-icon social-phone" data-flyout="phone" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="mystickyelements-flyout phone-flyout" aria-hidden="true">
+                        <div class="flyout-inner"><a href="tel:(852) 61852303">(852) 61852303</a><br>Mon-Fri 9:00-18:00</div>
+                    </div>
+                </li>
+
+                <!-- WeChat -->
+                <li class="mystickyelements-social-icon-li mystickyelements-list-item">
+                    <span class="mystickyelements-social-icon social-wechat" data-flyout="wechat" aria-haspopup="true" aria-expanded="false">
+                        <i class="fab fa-weixin" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="mystickyelements-flyout mystickyelements-wechat-flyout" aria-hidden="true">
+                        <div class="flyout-inner"><img src="images/Datatronic-wechat.jpg" alt="WeChat QR"><br>WeChat: datatron</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- 頂部輪播圖 -->
+    <section class="carousel" aria-label="Homepage hero">
+        <div id="activityCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" role="region" aria-label="Homepage carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- 圖片使用佔位符，圖片向頂部對齊 -->
+                <div class="carousel-item active">
+                    <img src="images/hero-magnetic-components.jpg" alt="Innovation in Magnetics" style="object-position: top center;">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-end" style="left: auto; right: 6%; top: calc(15% + 25px); bottom: auto; max-width: 60%;">
+                        <h1 class="display-4 fw-bold text-white"><span data-i18n="carousel_vietnam_title">Our New Manufacturing Site<br>in Vietnam</span></h1>
+                        <p class="lead text-white"><span data-i18n="carousel_vietnam_desc">Cater for your Business needs in Worldwide Locations</span></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-custom-magnetics.jpg" alt="Global Manufacturing">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-center" style="left: 0; right: 0; margin-left: auto; margin-right: auto; max-width: 80%;">
+                        <h1 class="display-4 fw-bold text-white"><span data-i18n="carousel_tech_title">Technology Advancement</span></h1>
+                        <p class="lead text-white"><span data-i18n="carousel_tech_desc">Forging the Future of Innovation</span></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-industrial-solutions.jpg" alt="Excellence">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-4 fw-bold text-white">Empowering the Medical<br>and Healthcare Industry</h1>
+                        <p class="lead text-white"><span data-i18n="carousel_medical_desc">50 Years of Service and Counting</span></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-aerospace-magnetics.jpg" alt="Precision Engineering">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-start" style="bottom: 15%;">
+                        <h1 class="display-4 fw-bold text-white"><span data-i18n="carousel_performance_title">Performance you can rely on</span></h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-medical-devices.jpg" alt="Sustainable Manufacturing">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-start" style="bottom: 15%;">
+                        <h1 class="display-4 fw-bold text-white">Innovative Solutions<br>for Automotive Applications</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Image Section with Main Business Sectors -->
+    <section style="background: url(images/business-sectors-bg.jpg) center; background-size: 100% 100%; background-repeat: no-repeat; min-height: 600px; padding: 3rem 1rem 0.5rem; margin: 0; overflow: hidden;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- 使用您要求的結構 -->
+                    <h3 class="section-title reveal-hidden"><strong><span data-i18n="business_sectors">Main Business Sectors</span></strong></h3>
+                    <p class="section-desc reveal-hidden"><span data-i18n="sectors_desc">We prioritize customer needs with our services quality and manufacturing facilities worldwide.</span></p>
+                    <div class="is-divider divider clearfix reveal-hidden" style="margin-top:0.5em;margin-bottom:2.5em;height:4px;background-color:rgb(216, 26, 41); margin-left: auto; margin-right: auto;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Business Sectors 內容採用新風格 & More按鈕換行 -->
+        <div class="container-fluid">
+            <div class="row g-4">
+                
+                <!-- 01. High-End Medical Equipment -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Equipment.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-medical-equipment.jpg" alt="Medical Equipment Placeholder">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">01.</span><span class="sector-title" data-i18n="medical">High-End Medical Equipment</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="medical_desc">
+                                The world's leading medical companies have chosen our company as a core supplier.
+                            </p>
+
+                            <!-- 按钮移至内容下方 -->
+                            <a href="Equipment.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02. Aerospace -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Aerospace.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-aerospace-magnetics.jpg" alt="Aerospace" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">02.</span><span class="sector-title" data-i18n="aerospace">Aerospace</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="aerospace_desc">
+                                We have added many stability testing machines to our products to meet the increasingly stringent requirements and to maintain our leadership in this area.
+                            </p>
+                            
+                            <!-- 按钮移至内容下方 -->
+                            <a href="Aerospace.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03. Telecommunication Application -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Telecommunication.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-telecommunications.jpg" alt="Telecommunication" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">03.</span><span class="sector-title" data-i18n="telecom">Telecommunication Application</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="telecom_desc">
+                                Responsible for the development of highly stable telecommunication systems for researchers in Silicon Valley, Shanghai and India.
+                            </p>
+                            
+                            <!-- 按钮移至内容下方 -->
+                            <a href="Telecommunication.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04. Implantable Medical Device -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Implantable.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-implantable-devices.jpg" alt="Implantable Medical Device" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">04.</span><span class="sector-title" data-i18n="implantable">Implantable Medical Device</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="implantable_desc">
+                                The health and medical product experience market has been in existence for over 30 years. The quality, experience, and efficacy have been continuously tested and proven over the long term, making it the brand of Sunshine Medical Company.
+                            </p>
+                            
+                            <!-- 按钮移至內容下方 -->
+                            <a href="Implantable.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05. Electric Vehicle -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Vehicle.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-electric-vehicle.jpg" alt="Electric Vehicle" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">05.</span><span class="sector-title" data-i18n="ev">Electric Vehicle</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="ev_desc">
+                                One of the earliest QS9000 certified automotive component suppliers with over 20 years of experience in automotive applications.
+                            </p>
+                            
+                            <!-- 按钮移至內容下方 -->
+                            <a href="Vehicle.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 06. ApplicationsIndustrial Application -->
+                <div class="col-md-4">
+                    <div class="business-sector-item">
+                        <a href="Industrial.html">
+                            <div class="img-inner image-cover dark">
+                                <img src="images/application-industrial-magnetics.jpg" alt="Industrial Applications" loading="lazy">
+                            </div>
+                        </a>
+                        <div class="sector-content p-3">
+                            <!-- 标题行 (无按钮) -->
+                            <div class="sector-title-row">
+                                <p class="mb-0"><span class="h-tit">06.</span><span class="sector-title" data-i18n="industrial">Industrial Application</span></p>
+                            </div>
+                            
+                            <hr class="my-2">
+                            <p class="sector-desc-text" data-i18n="industrial_desc">
+                                Supply R&D products to major corporations, nurturing long-standing partnerships with Fortune 500 companies for over 30 years, driving the growth of advanced industries.
+                            </p>
+
+                            <!-- 按钮移至內容下方 -->
+                            <a href="Industrial.html" class="sector-button btn sector-button-full">
+                                <span>More</span> <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products (New Style) -->
+    <section class="section" style="background:#f7f7f7; padding: 3rem 0 3.5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- New Title and Description -->
+                    <h3 class="section-title"><strong><span data-i18n="products">Our Products</span></strong></h3>
+                    <p class="product-section-description section-desc" data-i18n="products_desc">Dedicated Service and Customization. Global Facilities to Serve Our Clients.</p>
+                    <div class="is-divider divider clearfix" style="margin-top:0.5em;margin-bottom:1.8em;height:4px;background-color:rgb(216, 26, 41); margin-left: auto; margin-right: auto;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product grid with optimized 4-column layout -->
+        <div class="product-grid">
+                
+                <!-- Product 1: Power Inductors -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-power-inductors.jpg" alt="Power Inductors" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="inductor">Power Inductors</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Switching Power Magnetic Components -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-switching-power.jpg" alt="Switching Power Magnetic Components" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="switching">Switching Power Magnetic Components</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 3: Power Transformers (Customizable) -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-power-transformers.jpg" alt="Power Transformers (Customizable)" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="transformer">Power Transformers (Customizable)</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 4: Lighting Magnetic Components (Customizable) -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-lighting-magnetics.jpg" alt="Lighting Magnetic Components (Customizable)" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="lighting">Lighting Magnetic Components (Customizable)</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 5: Communication Magnetic Components -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-communication-transformers.jpg" alt="Communication Magnetic Components" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="comm">Communication Magnetic Components</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 6: Transformers and Choke Coils (Customizable) -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-choke-inductors.jpg" alt="Transformers and Choke Coils (Customizable)" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="choke">Transformers and Choke Coils (Customizable)</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 7: Current Sense Transformers (Customizable) -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-current-sense.jpg" alt="Current Sense Transformers (Customizable)" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="current">Current Sense Transformers (Customizable)</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 8: Wideband Transformers -->
+                <div class="product-item">
+                    <div class="product-box">
+                        <a href="products.html">
+                            <div class="box-image">
+                                <div class="image-cover">
+                                    <img src="images/product-wideband-transformers.jpg" alt="Wideband Transformers" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="box-text box-text-bottom">
+                                <div class="box-text-inner">
+                                    <h4><span data-i18n="wideband">Wideband Transformers</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 9: Medical Application Coils (Hidden) -->
+                
+            </div>
+    </section>
+    
+    <!-- About Section (Layered Floating Design) -->
+    <section class="about-section-container">
+        <div class="about-box-wrapper">
+            <div class="about-box">
+                <!-- Left: Image side with floating frame -->
+                <div class="box-image">
+                    <div class="image-cover">
+                        <img src="images/company-manufacturing-facility.jpg" alt="Datatronic Manufacturing Facility" loading="lazy">
+                    </div>
+                </div>
+                <!-- Right: Floating Content card -->
+                <div class="about-content">
+                    <h2 class="section-title section-title" data-i18n="about_datatronic">About Datatronic</h2>
+                    <p class="section-desc" data-i18n="about_desc1">Established in 1971, Datatronic is an award-winning, internationally recognized manufacturer of components for Medical, Aerospace, Telecommunication Industries, as well as data processors and other high-tech industrial applications.</p>
+                    
+                    <div class="about-locations section-desc">
+                        <p><span data-i18n="sales_office">Sales Office: United States, Hong Kong</span></p>
+                        <p><span data-i18n="research_centers">Research Centers: United States, Hong Kong, Zhongshan</span></p>
+                        <p><span data-i18n="manufacturing_sites">Manufacturing Sites: USA, Hong Kong, China, Vietnam</span></p>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="about.html" class="btn btn-outline-danger" style="border-radius: 50px; padding: 0.5rem 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; text-decoration: none;">
+                            <span data-i18n="more">More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Awards (Flickity Carousel - FIXED) -->
+    <section class="section" style="background:#f7f7f7; margin-top: 0; padding: 1.5rem 1rem 6.5rem;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="section-title"><strong><span data-i18n="awards">Awards</span></strong></h3>
+                    <p class="section-desc"><span data-i18n="sectors_desc">We prioritize customer needs with our services and quality, extending manufacturing excellence worldwide.</span></p>
+                    <div class="is-divider divider clearfix" style="margin-top:0.5em;margin-bottom:0.8rem;height:4px;background-color:rgb(216, 26, 41); margin-left: auto; margin-right: auto;"></div>
+                </div>
+            </div>
+            
+            <div class="awards-section-container" style="margin-top: 0; margin-bottom: 5rem; margin-left: -1rem; margin-right: -1rem;">
+                <div class="row large-columns-5 medium-columns-3 small-columns-2 slider"  data-flickity-options='{"cellAlign":"left","contain":true,"groupCells":5,"dragThreshold":5,"wrapAround":true,"prevNextButtons":false,"percentPosition":true,"pageDots":true,"autoPlay":4000,"pauseAutoPlayOnHover":true,"imagesLoaded":true,"rightToLeft":false}'>
+
+                <!-- Awards: synced with https://datatronic.com.hk/en/ homepage order -->
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021020149971.jpg" alt="Physio Control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022538558.jpg" alt="Micro Systems">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022555156.jpg" alt="Micro Systems">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022557576.jpg" alt="Medtronic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022592089.jpg" alt="Micro Systems">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022594548.jpg" alt="Micro Systems">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022595816.jpg" alt="Physio Control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-col col">
+                    <div class="col-inner">
+                        <div class="box has-hover gallery-box box-none">
+                            <div class="box-image image-cover">
+                                <img src="images/awards/2021022599011.jpg" alt="Medtronic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+                            <footer class="site-footer" style="margin-top: 2rem; padding-top: 2rem;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 footer-logo">
+                    <img src="images/logo.png" alt="Datatronic Logo">
+                    <p>Award-winning manufacturer of custom magnetic components since 1971.</p>
+                </div>
+                <div class="col-md-2 offset-md-1 footer-links">
+                    <strong>Quick Links</strong>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-links">
+                    <strong>Products</strong>
+                    <ul>
+                        <li><a href="medical.html">Medical</a></li>
+                        <li><a href="Aerospace.html">Aerospace</a></li>
+                        <li><a href="Industrial.html">Industrial</a></li>
+                        <li><a href="Vehicle.html">Vehicle</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-contact">
+                    <strong>Contact Us</strong>
+                    <p>19/F, North Point Industrial Building,<br>499 King's Road, North Point, Hong Kong<br><br>
+                    Email: datatron@datatronic.com.hk<br>
+                    Phone: +852-2564-8477</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <hr style="border-top: 1px solid #444;">
+                    <p class="mb-0" style="font-size: 0.8rem; color: #888;">&copy; 2026 Datatronic Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline round" id="top-link" style="display: none;">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script>
+        // i18n 翻譯資源 (完整填寫)
+        // Get saved language or default to 'en'
+        const savedLanguage = window.getSavedLanguage ? window.getSavedLanguage() : (localStorage.getItem('preferredLanguage') || 'en');
+        i18next.init({
+            lng: savedLanguage,
+            resources: {
+                en: { translation: {
+                    home: "Home", about_us: "About Us", products: "Products", applications: "Applications", contact_us: "Contact Us", language: "EN",
+                    app_page_title: "Applications",
+                    carousel_vietnam_title: "Our New Manufacturing Site in Vietnam",
+                    carousel_vietnam_desc: "Cater for your Business needs in Worldwide Locations",
+                    carousel_tech_title: "Technology Advancement",
+                    carousel_tech_desc: "Forging the Future of Innovation",
+                    carousel_medical_title: "Empowering the Medical and Healthcare Industry",
+                    carousel_medical_desc: "50 Years of Service and Counting",
+                    carousel_performance_title: "Performance you can rely on",
+                    carousel_automotive_title: "Innovative Solutions for Automotive Applications",
+                    business_sectors: "Main Business Sectors", sectors_desc: "We prioritize customer needs with our services quality and manufacturing facilities worldwide.",
+                    medical: "High-End Medical Equipment", medical_desc: "Trusted supplier for the world's leading medical device manufacturers.",
+                    aerospace: "Aerospace & Defense", aerospace_desc: "Meets the most stringent reliability and stability requirements.",
+                    telecom: "Telecommunications", telecom_desc: "Responsible for the development of highly stable telecommunication systems for clients worldwide.",
+                    implantable: "Implantable Medical Device", implantable_desc: "The quality, experience, and efficacy have been continuously tested and proven over the long term.",
+                    ev: "Electric Vehicle", ev_desc: "One of the earliest QS9000 certified automotive component suppliers with over 20 years of experience in automotive applications.",
+                    industrial: "High-tech Industrial Applications", industrial_desc: "Supply R&D products to major corporations, nurturing long-standing partnerships with Fortune 500 companies for over 30 years, driving the growth of advanced industries.",
+                    equipment: "High-End Medical Equipment", aerospace: "Aerospace & Defense", telecommunication: "Telecommunications", implantable: "Implantable Medical Device", vehicle: "Electric Vehicle", industrial: "Industrial Application",
+                    inductor: "Power Inductors", switching: "Switching Power Magnetic Components", transformer: "Power Transformers (Customizable)",
+                    lighting: "Magnetic Components for Lighting Industry (Customizable)", comm: "Communication Magnetic Components", choke: "Transformers and Choke Coils (Customizable)",
+                    current: "Current Sense Transformers (Customizable)", wideband: "Wideband Transformers",
+                    medical_coils: "Medical Application Coils (Customizable)", 
+                    products_desc: "Dedicated Service and Customization. Global Facilities to Serve Our Clients.",
+                    about_datatronic: "About Datatronic", 
+                    about_desc1: "Established in 1971, Datatronic is an award-winning, internationally recognized manufacturer of components for Medical, Aerospace, Telecommunication Industries, as well as data processors and other high-tech industrial applications.",
+                    about_locations: "Research, Sales and Service Locations",
+                    sales_office: "Sales Office: United States, Hong Kong",
+                    research_centers: "Research Centers: United States, Hong Kong, Zhongshan",
+                    manufacturing_sites: "Manufacturing Sites: USA, Hong Kong, China (Shunde, Zhongshan), Vietnam",
+                    about_desc2: "We prioritize customer needs with our services and quality, expanding manufacturing facilities worldwide.",
+                    awards: "Awards", catalogue: "Catalogue", more: "More",
+                }},
+                ja: { translation: {
+                    home: "ホーム", about_us: "会社概要", products: "製品情報", applications: "用途", contact_us: "お問い合わせ", language: "JP",
+                    app_page_title: "用途",
+                    carousel_vietnam_title: "ベトナムの新しい製造拠点",
+                    carousel_vietnam_desc: "世界中の拠点でお客様のビジネスニーズに対応",
+                    carousel_tech_title: "技術の進歩",
+                    carousel_tech_desc: "イノベーションの未来を築く",
+                    carousel_medical_title: "医療・ヘルスケア産業を支援",
+                    carousel_medical_desc: "50年以上のサービス実績",
+                    carousel_performance_title: "信頼できる性能",
+                    carousel_automotive_title: "自動車用アプリケーションの革新的ソリューション",
+                    business_sectors: "主要事業分野", sectors_desc: "グローバルな製造施設と厳格な品質システムにより、世界中のリーディングカンパニーにカスタム磁気ソリューションを提供しています。",
+                    medical: "ハイエンド医療機器", medical_desc: "世界の主要な医療機器メーカーの信頼できるコアサプライヤー。",
+                    aerospace: "航空宇宙・防衛", aerospace_desc: "最も厳しい信頼性と安定性の要件を満たしています。",
+                    telecom: "通信", telecom_desc: "シリコンバレー、上海、インドの研究者向けに、高安定な通信システムの開発を担当しています。",
+                    implantable: "植込み型医療機器", implantable_desc: "保健・医療製品の市場は30年以上の歴史があります。品質、経験、有効性が長期にわたり継続的に試験・証明されており、サンシャイン医療会社のブランドとなっています。",
+                    ev: "電気自動車", ev_desc: "自動車アプリケーションにおいて20年以上の経験を持つ、最も初期のQS9000認定自動車部品サプライヤーの1つです。",
+                    industrial: "ハイテク産業用アプリケーション", industrial_desc: "主要企業の研究開発製品を供給し、フォーチュン500企業との長年のパートナーシップを30年以上にわたり育成し、先進産業の成長を牽引しています。",
+                    equipment: "高機能医療機器", aerospace: "航空宇宙・防衛", telecommunication: "通信", implantable: "植込み型医療機器", vehicle: "電気自動車", industrial: "産業用アプリケーション",
+                    inductor: "パワーインダクタ", switching: "スイッチング電源磁気部品", transformer: "パワートランス (カスタマイズ可能)",
+                    lighting: "照明用磁気部品 (カスタマイズ可能)", comm: "通信用磁気部品", choke: "トランスおよびチョークコイル (カスタマイズ可能)",
+                    current: "電流検出トランス (カスタマイズ可能)", wideband: "広帯域トランス",
+                    medical_coils: "医療用コイル (カスタマイズ可能)",
+                    products_desc: "専任のサービスとカスタマイズ。クライアントにサービスを提供するためのグローバル施設。",
+                    about_datatronic: "Datatronicについて", 
+                    about_desc1: "1971年に設立されたDatatronicは、医療、航空宇宙、通信産業、データプロセッサ、その他のハイテク産業用アプリケーション向けのコンポーネントを製造する、受賞歴のある国際的に認められたメーカーです。",
+                    about_locations: "研究、販売およびサービスロケーション",
+                    sales_office: "営業所：米国、香港",
+                    research_centers: "研究センター：米国、香港、中山",
+                    manufacturing_sites: "製造拠点：米国、香港、中国（順徳、中山）、ベトナム",
+                    about_desc2: "私たちは、サービス品質と世界中の製造施設を通じて、顧客のニーズを優先しています。",
+                    awards: "栄誉と受賞", catalogue: "カタログ", more: "さらに詳しく →",
+                }},
+                cn: { translation: {
+                    home: "首页", about_us: "关于我们", products: "产品", applications: "应用", contact_us: "联系我们", language: "CN",
+                    app_page_title: "应用",
+                    carousel_vietnam_title: "我们在越南的新制造基地",
+                    carousel_vietnam_desc: "在全球各地满足您的业务需求",
+                    carousel_tech_title: "技术进步",
+                    carousel_tech_desc: "锻造创新未来",
+                    carousel_medical_title: "赋能医疗健康产业",
+                    carousel_medical_desc: "50年服务经验",
+                    carousel_performance_title: "值得信赖的性能",
+                    carousel_automotive_title: "汽车应用创新解决方案",
+                    business_sectors: "主要业务板块", sectors_desc: "凭借全球制造设施和严格的质量体系，我们为全球领先的公司提供定制磁性解决方案。",
+                    medical: "高端医疗设备", medical_desc: "世界领先医疗设备制造商的信赖核心供应商。",
+                    aerospace: "航空航天与国防", aerospace_desc: "满足最严苛的可靠性和稳定性要求。",
+                    telecom: "电信应用", telecom_desc: "负责为硅谷、上海和印度的研究人员开发高度稳定的电信系统。",
+                    implantable: "植入式医疗设备", implantable_desc: "保健和医疗产品经验市场已存在30多年。质量、经验和功效经过长期持续的测试和证明，使其成为Sunshine Medical Company的品牌。",
+                    ev: "电动汽车", ev_desc: "最早获得QS9000认证的汽车零部件供应商之一，在汽车应用方面拥有20多年的经验。",
+                    industrial: "高科技工业应用", industrial_desc: "为主要公司供应研发产品，与财富500强企业培育了30多年的长期合作伙伴关系，推动了先进产业的增长。",
+                    equipment: "高端医疗设备", aerospace: "航空航天与国防", telecommunication: "电信应用", implantable: "植入式医疗设备", vehicle: "电动汽车", industrial: "工业应用",
+                    inductor: "功率电感", switching: "开关电源磁性元件", transformer: "电源变压器（可定制）",
+                    lighting: "照明磁性元件（可定制）", comm: "通信磁性元件", choke: "变压器和扼流圈（可定制）",
+                    current: "电流感应变压器（可定制）", wideband: "宽带变压器",
+                    medical_coils: "医疗应用线圈（可定制）",
+                    products_desc: "专用服务和定制。全球设施服务我们的客户。",
+                    about_datatronic: "关于 Datatronic", 
+                    about_desc1: "Datatronic 成立于 1971 年，是一家屡获殊荣、国际公认的制造商，为医疗、航空航天、电信行业以及数据处理器和其他高科技工业应用提供元件。",
+                    about_locations: "研究、销售和服务地点",
+                    sales_office: "销售办公室：美国、香港",
+                    research_centers: "研究中心：美国、香港、中山",
+                    manufacturing_sites: "制造基地：美国、香港、中国（顺德、中山）、越南",
+                    about_desc2: "我们通过优质的服务和全球制造设施，优先考虑客户的需求。",
+                    awards: "荣誉与奖项", catalogue: "产品目录", more: "了解更多 →",
+                }}
+            }
+        }, (err, t) => {
+            // Apply initial translations after i18next is ready
+            if (!err && typeof window.updateContent === 'function') {
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', window.updateContent);
+                } else {
+                    window.updateContent();
+                }
+            }
+        });
+
+        // Shared helpers are now provided by js/common.js — page-specific logic kept below where needed.
+        // Manual product description update (kept for index page only)
+        const prodDesc = document.querySelector('.product-section-description');
+        if (prodDesc && typeof i18next !== 'undefined') prodDesc.textContent = i18next.t('products_desc');
+
+        
+
+        // Background Text Parallax Effect
+        const bgText = document.querySelector('.about-section-container');
+        window.addEventListener('scroll', () => {
+            const scrollValue = window.scrollY;
+            const target = document.querySelector('.about-section-container::before'); 
+            // Since we can't select pseudo-elements in JS easily, we move the container property
+            const offset = (scrollValue - bgText.offsetTop) * 0.1;
+            bgText.style.setProperty('--bg-offset', `${offset}px`);
+        });
+    </script>
+</body>
+</html>

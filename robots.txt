@@ -1,0 +1,40 @@
+# robots.txt for Datatronic website
+# Allow search engines to crawl all pages except admin/private areas
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cleanup/
+Disallow: /downloaded_site/
+Disallow: /migrate/
+Disallow: /scripts/
+Disallow: /src/
+Disallow: /strapi/
+Disallow: /*.json$
+Disallow: /Active/
+
+# Specify crawl delay (in seconds) to avoid server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://datatronic.com.hk/sitemap.xml
+
+# Allow common search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
